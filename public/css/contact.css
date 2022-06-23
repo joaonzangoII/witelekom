@@ -1,0 +1,123 @@
+
+
+@media (max-width: 1900px){
+    .contact-tittle{
+        margin: 0 auto;
+        display: table;
+        font-size: 6em;
+        padding: 16% 0px 23% 0px;
+        color: black;
+        font-weight: 800;
+    }
+
+    .form-section{
+        margin: 0 auto;
+        display: table;
+        background-color: white;
+        padding: 5% 10% 0px 9%;
+    }
+
+    .form{
+        color: black;
+        padding: 8% 0px 5% 18%;
+        padding: 0px 0px 5% 12%;
+    }
+    .form h2{
+        font-size: 3.2em;
+        font-weight: 600;
+    }
+
+    .form span{
+        font-size: .7em;
+        font-weight: 200;
+    }
+
+    .form label{
+        font-size: 1em; 
+        width: 100%;
+        padding: 3% 0px 0% 0px;
+    }
+
+    textarea{
+        background-color: white;
+        color: rgb(245, 238, 238);
+        font-size: .9em;
+        border-radius: 7px;
+        border-color: #9d999914;
+        padding: 1% 0px 1% 2%;
+        width: 76%;
+    }
+
+    input{
+        width: 85%;
+        background-color: white;
+        color: rgb(245, 238, 238);
+        font-size: .9em;
+        border-radius: 7px;
+        border-color: #9d999914;
+        height: 42px;
+        padding: 1% 0px 1% 2%;
+    }
+
+    .tittle{
+        padding: 0px 0px 3% 16%;
+    }
+
+    .subscription-box{
+        margin: 1% 0px 1% 0px;
+        font-size: .6em;
+    }
+
+    .subscription h3{
+        margin: 3% 0px 2% 0px;
+    }
+
+    .first{
+        padding: 0px 0px 0px 16%;
+    }
+
+    .first input {
+        width: 90%;
+    }
+
+    .second{
+        padding: 0px 17% 0px 0px;
+    }
+
+    .second input {
+        width: 100%;
+    }
+
+    .text-section{
+        margin: 0px 0px 0% 15%;
+    }
+    .work-section{
+        background: white;
+    }
+
+}
+
+@media (max-width:870px){
+    .default-container {
+        background-size: 100%;
+    }
+}
+
+@media (max-width:765px){
+    .second {
+        padding: 6% 0% 0px 16%;
+        width: 91%;
+    }
+    .form-section {
+        padding: 5% 10% 0px 0%;
+    }
+    .contact-tittle {
+        font-size: 4em;
+    }
+}
+
+@media (max-width:575px){
+    .contact-tittle {
+        font-size: 4em;
+    }
+}
