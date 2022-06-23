@@ -56,7 +56,10 @@
 
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 2800px) {
+    .explore-img-section {
+        padding: 0px 14% 0px 0px;
+    }
     .link {
         font-size: .8em;
     }
@@ -489,6 +492,9 @@
 
 
 @media (max-width: 702px) {
+    .text-section {
+        margin: 0px 0px 0% 11%;
+    }
     .subscription-box {
         margin: 1% 0px 0px 0px;
         width: 191px;
@@ -982,6 +988,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .explore-img-section {
+        padding: 0px 0% 0px 0px;
+    }
     #menu {
         transform: none;
         opacity: 0;
@@ -1137,10 +1147,6 @@ nav {
     padding: 4% 0px 0px 0px;
     font-weight: 500;
     text-shadow: 0px 0px black;
-}
-
-.explore-img-section {
-    padding: 0px 0% 0px 0px;
 }
 
 .default-container {

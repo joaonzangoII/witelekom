@@ -111,6 +111,9 @@
     .contact-tittle {
         font-size: 4em;
     }
+    .subscription-box {
+        margin: 1% 0px 7% 0px;
+    }
 }
 
 @media (max-width:575px){
