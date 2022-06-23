@@ -5,20 +5,32 @@
 
 
 @media (max-width: 4687px) {
+    .subscription-box {
+        margin: 1% 0px 0px 0px;
+        width: 239px;
+    }
+
+    .orientation-aside-1 p {
+        text-shadow: 0px 1px black;
+    }
+
     .link {
         font-size: 1em;
     }
+
     .footer-section h3 {
         font-size: 1.4em;
     }
+
     .carrousel-img {
         width: 100%;
         height: 100%;
     }
 
-    .explore-container{
+    .explore-container {
         padding: 5% 0px 0px 0px;
     }
+
     .menu {
         display: table;
     }
@@ -30,12 +42,12 @@
     #menuToggle input {
         display: none;
     }
-    
-    .header-social{
+
+    .header-social {
         display: block;
     }
 
-    .clear{
+    .clear {
         clear: both;
     }
 
@@ -45,6 +57,7 @@
     .link {
         font-size: .8em;
     }
+
     .footer-section h3 {
         font-size: 1.2em;
     }
@@ -119,16 +132,13 @@
         font-size: 4em;
     }
 
-    .subscription-box {
-        margin: 1% 0px 0px 0px;
-    }
-
     .footer-brands {
         font-size: 20px;
     }
 
 
     .follow h4 {
+        font-size: .8em;
         padding: 0px 3% 0px 0px;
     }
 
@@ -230,27 +240,35 @@
     .plan h3 {
         font-size: 1.4em;
     }
+
     .plan h4 {
         font-size: 1.2em;
     }
+
     .carrousel-info {
         height: 40%;
     }
+
     .carrousel-img {
         height: 634px;
     }
+
     .carrousel-title {
         font-size: 2.5em;
     }
+
     .orientation-aside-1 p {
         font-size: 1.2em;
     }
+
     .carrousel-desc {
         font-size: 1.3em;
     }
+
     .plan p {
         font-size: .7em;
     }
+
     .plan {
         padding: 1% 0% 1% 3%;
         background-color: white;
@@ -272,10 +290,11 @@
     .footer-section h3 {
         font-size: 1.1em;
     }
-    
+
     .orientation-aside-1 h2 {
         font-size: 2.5em;
     }
+
     .services-options p {
         font-size: 1em;
     }
@@ -341,18 +360,21 @@
     .carrousel-img {
         height: 492px;
     }
+
     .call-now {
         font-size: 13px;
         padding: 4% 0px 0px 0%;
     }
 
-    .header-social{
+    .header-social {
         display: none;
     }
+
     .carrousel {
         width: 87%;
         height: 493px;
     }
+
     .default-container {
         padding: 12% 0px 14% 0px;
         background-size: auto;
@@ -393,14 +415,16 @@
         padding-bottom: 10%;
         background-size: auto;
     }
-    
-    .header-social, .menu{
+
+    .header-social,
+    .menu {
         display: none;
     }
-    
-    .explore-container{
+
+    .explore-container {
         padding: 2% 0px 0px 0px;
     }
+
     .plan {
         padding: 1% 0% 4% 6%;
         background-color: white;
@@ -441,13 +465,15 @@
     }
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
     .aside-values h3 {
         font-size: 1.4em;
     }
+
     .aside-values p {
         font-size: 8px;
     }
+
     .orientation-aside-1 p {
         font-size: .8em;
     }
@@ -458,21 +484,23 @@
         width: 87%;
         height: 422px;
     }
+
     .carrousel-img {
         height: 421px;
     }
+
     .carrousel-title {
         font-size: 1.8em;
     }
-    
+
     .carrousel-info {
         height: 46%;
     }
-    
+
     .aside-values p {
         font-size: .8em;
     }
-    
+
 
     .aside-values h3 {
         font-size: 1.2em;
@@ -545,27 +573,150 @@
     .call-now {
         padding: 5% 0px 0px 0%;
     }
-    
+
     .orientation-aside-1 p {
         font-size: 1em;
     }
 }
 
+@media (max-width: 400px) {
+    .plans-section h2 {
+        font-size: 2.2em;
+    }
+    .follow h4 {
+        font-size: .6em;
+    }
+
+    .copyright-2 {
+        font-size: .2em;
+    }
+
+    .copyright-1 {
+        font-size: .3em;
+    }
+
+    .link {
+        font-size: .6em;
+    }
+
+    .footer-section h3 {
+        font-size: .9em;
+    }
+
+    .work-with-us p {
+        font-size: .9em;
+    }
+
+    .services-options p {
+        font-size: .8em;
+        padding: 7% 7% 19% 8%;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .plan h4 {
+        font-size: 1.3em;
+    }
+
+    .plan {
+        width: 93%;
+    }
+
+    .plan p {
+        font-size: .7em;
+    }
+
+    .plan h3 {
+        font-size: 1.7em;
+    }
+    .plans-section {
+        padding: 9% 2% 8% 13%;
+    }
+
+    .cc {
+        margin: 0px 0px 0px 6%;
+        padding: 0px;
+    }
+
+    .subscription-box {
+        margin: 1% 0px 0px 0px;
+        width: 175px;
+    }
+
+    .call-now {
+        font-size: 10px;
+        padding: 10% 0px 0px 0%;
+    }
+
+    .default-container {
+        padding: 21% 0px 14% 0px;
+    }
+
+    .explore-section-h2 {
+        font-size: 2.5em;
+    }
+
+    .explore-section-p {
+        font-size: .8em;
+    }
+
+    .carrousel-desc-button {
+        font-size: .5em;
+        width: 83px;
+        height: 22px;
+    }
+
+    .explore-container {
+        padding: 2% 0px 9% 0px;
+    }
+
+    .orientation-aside-1 p {
+        text-shadow: 0px 0px black;
+        font-size: 1em;
+    }
+
+    .orientation-aside-1 h2 {
+        font-size: 2.8em;
+    }
+
+    .aside-values h3 {
+        font-size: 1em;
+    }
+
+    .aside-values p {
+        font-size: .5em;
+    }
+
+    .aside-values {
+        padding: 0% 1% 7% 2%;
+        color: black;
+    }
+
+
+}
+
+
+
 
 .fade {
     animation-name: fade;
     animation-duration: 8s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /*Menu Area*/
 body {
 
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 #menu a {
@@ -600,11 +751,11 @@ body {
     cursor: pointer;
 
     opacity: 0;
-    z-index: 2; 
+    z-index: 2;
 
     -webkit-touch-callout: none;
 }
- 
+
 #menuToggle span {
     display: block;
     width: 29px;
@@ -631,23 +782,23 @@ body {
 #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
 }
- 
+
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
 }
- 
+
 #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
- 
+
 #menuToggle input:checked~span:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
 }
- 
+
 #menu {
     position: absolute;
     width: 300px;
@@ -670,7 +821,7 @@ body {
 #menu li {
     padding: 10px 0;
     font-size: 22px;
-} 
+}
 
 #menuToggle input:checked~ul {
     transform: none;
@@ -849,7 +1000,8 @@ nav {
 }
 
 .carrousel-img {
-    width: 100%;;
+    width: 100%;
+    ;
     border-radius: 18px;
 }
 
@@ -870,7 +1022,6 @@ nav {
     padding: 5% 6px 0px 0px;
     word-spacing: .3em;
     font-weight: 500;
-    text-shadow: 0px 1px black;
 }
 
 .aside-values {
@@ -949,7 +1100,6 @@ nav {
     border-color: #00000024;
     border-radius: 0.1em;
     font-size: .5em;
-    width: 239px;
     padding: 1% 0% 1% 1%;
     font-weight: 600;
 }
@@ -1011,7 +1161,6 @@ footer {
 }
 
 .follow h4 {
-    font-size: .8em;
     font-weight: 500;
     display: inline-block;
 }
@@ -1042,12 +1191,14 @@ footer {
     float: right;
 }
 
-.arrow { 
-    transition: transform .2s; 
-  }
-  
-  .arrow:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
+.arrow {
+    transition: transform .2s;
+}
+
+.arrow:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
