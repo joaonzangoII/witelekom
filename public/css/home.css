@@ -489,6 +489,9 @@
 
 
 @media (max-width: 702px) {
+    .text-section {
+        margin: 0px 0px 0% 11%;
+    }
     .subscription-box {
         margin: 1% 0px 0px 0px;
         width: 191px;
