@@ -22,7 +22,7 @@
     }
 
     .footer-section h3 {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     .carrousel-img {
@@ -480,7 +480,13 @@
     .orientation-aside-1 p {
         font-size: .8em;
     }
+
+    .explore-img {
+        margin: 5% 4px 4px 4%;
+    }
 }
+
+
 
 @media (max-width: 702px) {
     .subscription-box {
@@ -577,6 +583,9 @@
 }
 
 @media (max-width: 680px) {
+    .follow {
+        width: 80%;
+    }
     .call-now {
         padding: 5% 0px 0px 0%;
     }
@@ -586,7 +595,25 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 520px) {
+    #menu li {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+    .form-section {
+        padding: 5% 14% 0px 0%;
+    }
+    .footer-brands {
+        font-size: 12px;
+    }
+    .explore-img {
+        width: 68%;
+        margin: 0 auto;
+        float: initial;
+        height: auto;
+        display: table;
+        padding: 10% 0px 0px 0px;
+    }
     
     .carrousel-desc {
         font-size: .5em;
@@ -603,11 +630,11 @@
     }
 
     .copyright-2 {
-        font-size: .2em;
+        font-size: .3em;
     }
 
     .copyright-1 {
-        font-size: .3em;
+        font-size: .4em;
     }
 
     .link {
@@ -691,7 +718,7 @@
     }
 
     .orientation-aside-1 h2 {
-        font-size: 2.8em;
+        font-size: 2.2em;
     }
 
     .aside-values h3 {
@@ -708,6 +735,18 @@
     }
 
 
+}
+
+@media (max-width: 430px){
+    .form-section {
+        padding: 5% 16% 0px 0%;
+    }
+    .footer-section h3 {
+        font-size: .6em;
+    }
+    .work-with-us h2 {
+        font-size: 1.8em;
+    }
 }
 
 @media (max-width: 360px){
@@ -913,8 +952,9 @@ body {
 }
 
 #menu {
+    display: none;
     position: absolute;
-    width: 300px;
+    width: 237px;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -1100,7 +1140,7 @@ nav {
 }
 
 .explore-img-section {
-    padding: 0px 14% 0px 0px;
+    padding: 0px 0% 0px 0px;
 }
 
 .default-container {
