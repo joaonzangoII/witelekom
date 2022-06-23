@@ -5,6 +5,9 @@
 
 
 @media (max-width: 4687px) {
+    .follow {
+        width: 60%;
+    }
     .subscription-box {
         margin: 1% 0px 0px 0px;
         width: 239px;
@@ -480,6 +483,10 @@
 }
 
 @media (max-width: 702px) {
+    .subscription-box {
+        margin: 1% 0px 0px 0px;
+        width: 191px;
+    }
     .carrousel {
         width: 87%;
         height: 422px;
@@ -580,6 +587,14 @@
 }
 
 @media (max-width: 400px) {
+    
+    .carrousel-desc {
+        font-size: .5em;
+        margin: 0px;
+    }
+    .carrousel-title {
+        font-size: .8em;
+    }
     .plans-section h2 {
         font-size: 2.2em;
     }
@@ -653,7 +668,7 @@
     }
 
     .explore-section-h2 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .explore-section-p {
@@ -693,6 +708,104 @@
     }
 
 
+}
+
+@media (max-width: 360px){
+    .follow {
+        width: 91%;
+    }
+    .footer-brands {
+        font-size: 7px;
+    }
+    .follow h4 {
+        font-size: .4em;
+    }
+    .link {
+        font-size: .4em;
+    }
+    .footer-section h3 {
+        font-size: .6em;
+    }
+    .subscription-box {
+        margin: 1% 0px 8% 0px;
+        width: 127px;
+    }
+    .subscription h3 {
+        font-size: .5em;
+    }
+    .work-with-us p {
+        font-size: .8em;
+        padding: 5% 2% 17% 2%;
+    }
+    .work-with-us h2 {
+        font-size: 1.7em;}
+
+    .services-options h2 {
+        font-size: 1.7em;
+    }
+    .plan {
+        min-height: 552px;
+    }
+    .plans-section {
+        padding: 9% 2% 8% 2%;
+    }
+    .plans-section h2 {
+        font-size: 1.5em;
+    }
+    .plan h3 {
+        font-size: 1.5em;
+    }
+    .plan h4 {
+        font-size: 1em;
+    }
+    .aside-values p {
+        font-size: .5em;
+    }
+    .aside-values {
+       padding: 0px;
+    }
+    .aside-values h3 {
+        font-size: .6em;
+    }
+    .orientation-aside-1 h2 {
+        font-size: 2em;
+    }
+    .explore-section-p {
+        font-size: .7em;
+    }
+    .explore-section-h2 {
+        font-size: 1.5em;
+    }
+    .carrousel-desc-button {
+        font-size: .4em;
+        width: 54px;
+        height: 18px;
+    }
+    .carrousel-img {
+        height: 217px;
+    }
+    .carrousel {
+        width: 87%;
+        height: 217px;
+    }
+    .call-p{
+        margin: 0px;
+    }
+    .call-now {
+        font-size: 6px;
+        padding: 21% 0px 0px 0%;
+        margin: 0px;
+    }
+    #menuToggle {
+        position: absolute;
+        top: 13px;
+        right: 24px;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 25px;
+    }
 }
 
 
@@ -1154,7 +1267,6 @@ footer {
 }
 
 .follow {
-    width: 60%;
     color: white;
     margin: 0 auto;
     display: table;

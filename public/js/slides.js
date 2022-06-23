@@ -33,3 +33,10 @@ function plusSlides(n) {
 function currentSlide(n) {
     showChoosedSlides(slideIndex = n);
 }
+
+function hideMenu(){
+    document.getElementById("menu").style.display = 'none';
+}
+function showMenu(){
+    document.getElementById("menu").style.display = 'block';
+}
