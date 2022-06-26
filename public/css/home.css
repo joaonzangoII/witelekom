@@ -5,6 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;500;700&display=swap');
 
 @media (max-width: 4687px) {
+
+
+    .aside-values {
+        padding: 7% 1% 7% 5%;
+        color: black;
+    }
+
     .subscription h3 {
         color: black;
         font-weight: 500;
@@ -30,9 +37,10 @@
     .orientation-aside-1 h2 {
         font-size: 2em;
     }
+
     .follow {
         width: 60%;
-    } 
+    }
 
     .orientation-aside-1 p {
         text-shadow: 0px 1px black;
@@ -242,6 +250,12 @@
         margin: 0px 0px 4% 0px;
     }
 
+}
+
+@media (max-width: 1395px) {
+    .carrousel {
+        height: 616px;
+    }
 }
 
 @media (max-width: 1415px) {
@@ -511,7 +525,19 @@
     }
 }
 
+@media (max-width: 800px) {
+    .aside-values h3 {
+        font-size: 1.2em;
+    }
 
+    .explore-section-p {
+        font-size: .8em;
+    }
+
+    .explore-section-h2 {
+        font-size: 3em;
+    }
+}
 
 @media (max-width: 702px) {
     .text-section {
@@ -627,7 +653,7 @@
 }
 
 @media (max-width: 520px) {
-    
+
 
     .subscription h3 {
         color: black;
@@ -649,10 +675,11 @@
         font-weight: 600;
         margin: 3% 0px 4% 0px;
     }
- 
+
     .orientation-aside-1 {
         padding: 8% 0px 0% 5%;
     }
+
     #menu li {
         padding: 5px 0;
         font-size: 16px;
@@ -745,7 +772,7 @@
         padding: 0px;
     }
 
-    .subscription-box { 
+    .subscription-box {
         width: 175px;
     }
 
@@ -802,21 +829,38 @@
 }
 
 @media (max-width: 502px) {
-    .carrousel-img{
+    .carrousel-img {
         height: 277px;
     }
-    .carrousel{
+
+    .carrousel {
         height: 277px;
     }
+
     .carrousel-info {
         height: 30%;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     .carrousel-info {
         height: 44%;
     }
+}
+
+@media (max-width: 430px) {
+    .carrousel-info {
+        height: 32%;
+    }
+
+    .carrousel {
+        height: 395px;
+    }
+
+    .carrousel-info {
+        height: 44%;
+    }
+
     .form-section {
         padding: 5% 16% 0px 0%;
     }
@@ -830,7 +874,22 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
+    .carrousel {
+        height: 276px;
+    }
+}
+
+@media (max-width: 400px) {
+    .carrousel-info {
+        padding: 0px 0px 0px 6%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        position: absolute;
+        border-radius: 20px;
+        bottom: 0;
+    }
+
     .follow {
         width: 91%;
     }
@@ -878,7 +937,7 @@
     }
 
     .plans-section {
-        padding: 9% 2% 8% 2%;
+        padding: 9% 2% 8% 12%;
     }
 
     .plans-section h2 {
@@ -933,8 +992,8 @@
     }
 
     .call-now {
-        font-size: 6px;
-        padding: 21% 0px 0px 0%;
+        font-size: 10px;
+        padding: 11% 0px 0px 0%;
         margin: 0px;
     }
 
@@ -950,12 +1009,203 @@
     }
 }
 
-@media (max-width: 290px){
+@media (max-width: 380px) {
+    .aside-values p {
+        font-size: .4em;
+    }
+}
+
+@media (max-width: 340px) {
+    .call-now {
+        font-size: 6px;
+        padding: 21% 0px 0px 0%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 281px) {
+    .services-options h2 {
+        font-size: 1.4em;
+    }
+    .explore-section-p {
+        font-size: .6em;
+    }
+    .orientation-aside-1 h2 {
+        font-size: 1.7em;
+    }
+    .orientation-aside-1 p {
+        font-size: .7em;
+    }
+    .aside-values p {
+        font-size: 5px;
+    }
+    .aside-values h3 {
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 290px) {
     .carrousel-info {
         height: 50%;
     }
+
     .call-now {
         font-size: 8px;
+    }
+}
+
+@media (max-width: 200px) {
+    .explore-section-h2 {
+        font-size: 19px;
+    }
+
+    .orientation-aside-1 h2 {
+        font-size: 1em;
+    }
+
+    .orientation-aside-1 p {
+        font-size: .4em;
+    }
+
+    .explore-section-p {
+        font-size: 9px;
+    }
+
+    .explore-section-h2 {
+        font-size: 19px;
+    }
+
+    .plan h3 {
+        font-size: .9em;
+    }
+
+    .plans-section {
+        padding: 9% 0% 8% 7%;
+    }
+
+    .aside-values {
+        padding: 7% 0% 7% 0%;
+        color: black;
+    }
+
+    .aside-values h3 {
+        font-size: .4em;
+        margin: 0px 0px 10% 0px;
+    }
+
+    .aside-values p {
+        font-size: .3em;
+    }
+
+    .plan h4 {
+        font-size: .7em;
+    }
+
+    .plan p {
+        font-size: .5em;
+    }
+
+    .plan {
+        min-height: 406px;
+    }
+
+    .plan h3 {
+        font-size: 1em;
+    }
+
+    .services-options h2 {
+        font-size: 1em;
+    }
+
+    .footer-section h3 {
+        font-size: 6px;
+    }
+
+    .link {
+        font-size: 4px;
+    }
+
+    .copyright-1 {
+        font-size: 3px;
+    }
+
+    .copyright-2 {
+        font-size: 3px;
+    }
+
+    .work-with-us p {
+        padding: 5% 2% 17% 2%;
+    }
+
+    .subscription h3 {
+        font-size: 5px;
+    }
+
+    .subscription h3 {
+        margin: 14% 0px 0% 0px;
+    }
+
+    .subscription-box {
+        font-size: 5px;
+    }
+
+    .subscription-box {
+        margin: 1% 0px 8% 0px;
+        width: 92px;
+    }
+
+    .orientation-aside-1 p {
+        font-size: .7em;
+    }
+
+    .orientation-aside-1 h2 {
+        font-size: 1.7em;
+    }
+
+    .carrousel-desc-button {
+        font-size: 0.3em;
+        width: 44px;
+        height: 16px;
+    }
+
+    .carrousel-title {
+        font-size: .5em;
+        margin: 9% 0% 1% 0%;
+    }
+
+    .carrousel-title {
+        line-height: 1.2em;
+    }
+
+    .carrousel-img {
+        height: 147px;
+    }
+
+    .carrousel {
+        width: 87%;
+        height: 140px;
+    }
+
+    .carrousel-title {
+        font-size: .5em;
+    }
+
+    .default-container {
+        padding: 35% 0px 14% 0px;
+    }
+
+    nav {
+        padding: 0% 0% 0px 5%;
+    }
+
+    .call-now {
+        font-size: 7px;
+        padding: 22% 0px 0px 0px;
+    }
+
+    .call {
+        padding: 0px 0px 0px 0px;
     }
 }
 
@@ -1288,11 +1538,6 @@ nav {
     padding: 5% 6px 0px 0px;
     word-spacing: .3em;
     font-weight: 300;
-}
-
-.aside-values {
-    padding: 7% 1% 7% 5%;
-    color: black;
 }
 
 .aside-values h3 {
