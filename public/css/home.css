@@ -1010,6 +1010,9 @@
 }
 
 @media (max-width: 380px) {
+    .carrousel-info {
+        height: 53%;
+    }
     .aside-values p {
         font-size: .4em;
     }
@@ -1017,9 +1020,15 @@
 
 @media (max-width: 340px) {
     .call-now {
-        font-size: 6px;
-        padding: 21% 0px 0px 0%;
+        font-size: 9px;
+        padding: 16% 0px 0px 0%;
         margin: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .aside-values p{
+        font-size: .3em;
     }
 }
 
