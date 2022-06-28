@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300;500;700&display=swap');
 
-@media (max-width: 4687px) {
+@media (max-width: 6687px) {
 
 
     .aside-values {
@@ -85,7 +85,7 @@
 
 }
 
-@media (max-width: 2800px) {
+@media (max-width: 5800px) {
     .explore-img-section {
         padding: 0px 14% 0px 0px;
     }
@@ -252,15 +252,18 @@
 
 }
 
-@media (max-width: 1395px) {
-    .carrousel {
-        height: 616px;
-    }
-}
-
 @media (max-width: 1415px) {
     .plan h3 {
         font-size: 1.8em;
+    }
+    .carrousel-img {
+        height: 620px;
+    }
+}
+
+@media (max-width: 1395px) {
+    .carrousel {
+        height: 616px;
     }
 }
 
@@ -399,6 +402,9 @@
 }
 
 @media (max-width: 902px) {
+    .sobre{
+        display: flex;
+    }
     .carrousel-img {
         height: 492px;
     }
