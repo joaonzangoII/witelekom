@@ -956,6 +956,9 @@
 }
 
 @media (max-width: 400px) {
+    .default-container {
+        padding: 21% 0px 8% 0px;
+    }
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
         height: 254px;
         }
