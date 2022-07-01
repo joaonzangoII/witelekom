@@ -11,6 +11,20 @@
     position: relative;
 }
 @media (max-width: 6687px) {
+
+    .aside-logos .logo {
+        max-width: 36%;
+        display: table;
+    }
+    
+    .aside-logos .google {
+        max-width: 36%;
+        padding: 4% 0px 0px 0px;
+    }
+    .cc a{
+        text-decoration: none;
+        color: #FF9012;
+    }
     .language-menu{
         width: 14%;
         background-color: white;
@@ -321,9 +335,12 @@
         font-size: .8em;
     }
 }
-
+ 
 
 @media (max-width: 1150px) {
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: 634px;
+    }
     .plan h3 {
         font-size: 1.4em;
     }
@@ -929,7 +946,7 @@
     }
 
     .carousel {
-        height: 395px;
+        height: 342px;
     }
 
     .carousel-info {
@@ -1105,6 +1122,10 @@
         padding: 16% 0px 0px 0%;
         margin: 0px;
     }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: 229px;
+        border-radius: 20px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1136,8 +1157,9 @@
 
 @media (max-width: 280px){
     .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-        height: 187px;
-        }
+        height: 200px;
+        border-radius: 20px;
+    }
 }
 
 
@@ -1696,16 +1718,6 @@ footer {
     margin: 0 auto;
     display: table;
     padding: 0px 0px 5% 0px;
-}
-
-.aside-logos .logo {
-    max-width: 36%;
-    display: table;
-}
-
-.aside-logos .google {
-    max-width: 36%;
-    padding: 4% 0px 0px 0px;
 }
 
 .footer-section {

@@ -101,7 +101,64 @@
 
 }
 
+
+@media (max-width: 3015px) {
+    .second {
+        padding: 0% 22% 0px 0%;
+    }
+    .first {
+        padding: 0% 0px 0px 19%;
+    }
+    .second input {
+        width: 99%;
+    }
+    .first input {
+        width: 89%;
+    }
+    .tittle {
+        padding: 0px 0px 3% 19%;
+    }
+    .form-section {
+        padding: 5% 25% 0px 9%;
+    }
+    .form h2 {
+        font-size: 2.9em;
+    }
+    .form span {
+        font-size: .8em;
+        font-weight: 500;
+    }
+    .text-section {
+        margin: 0px 0px 0% 17%;
+    }
+    .subscription h3 {
+        padding: 5px 0% 1% 0px;
+        margin: 3% 3% 1% 0%;
+        font-size: .8em;
+    }
+    .subscription-box {
+        margin: 2% 0px 2% 0px;
+        font-size: .6em;
+        height: 50%;
+    }
+    
+}
+
 @media (max-width:870px){
+    .aside-logos {
+        padding: 3% 0px 3% 25%;
+    }
+
+    .aside-logos .logo {
+        max-width: 55%;
+        display: table;
+    }
+
+    .aside-logos .google {
+        max-width: 55%;
+        padding: 4% 0px 0px 0px;
+    }
+
     .default-container {
         background-size: 100%;
     }
@@ -162,16 +219,33 @@
 }
 
 @media (max-width: 430px){
+    .form h2 {
+        font-size: 2em;
+    }
+    .cc {
+        margin: 0px 0px 0px 0%;
+        padding: 0px;
+    }
+    .cc h4, h5{
+        font-size: .6em;
+    }
     .subscription-box {
-        margin: 0% 0px 5% 0px;
+        margin: 3% 0px 3% 0px;
         height: 2.8em;
     }
     .subscription h3 {
-        margin: 6% 0px 2% 0px;
+        margin: 5% 0px 2% 0px;
         font-size: 7px;
     }
     .form-section {
-        padding: 5% 16% 0px 0%;
+        padding: 5% 5% 0px 0%;
+    }
+    .aside-logos {
+        padding: 3% 0px 3% 25%;
+        margin: 0 auto;
+        display: table;
+        /* padding: 0px; */
+        align-items: center;
     }
 }
 
@@ -187,6 +261,33 @@
     }
 }
 
+@media(max-width:350px){
+    .subscription h3 {
+        padding: 0px 0% 1% 0px;
+        margin: 4% 0px 0% 7%;
+        font-size: 9px;
+    }
+}
+@media(max-width:190px){
+    .contact-tittle {
+        font-size: 1.7em;
+    }
+    .form h2 {
+        font-size: 1.3em;
+    }
+    input{
+        font-size: .7em;
+    }
+    .subscription h3 {
+        padding: 0px 0% 1% 0px;
+        margin: 7% 0px 0% 7%;
+        font-size: 6px;
+    }
+    .subscription-box {
+        height: 24px;
+        width: 87px;
+    }
+}
 
 @media (max-width: 300px){
     .default-container {
