@@ -26,6 +26,11 @@
         </div>
 
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
+            <div class="language-section">
+                <i class="fa-brands header-brands"><img src="/images/icons/globe.png"><span class="language ">PORTUGUÊS <i
+                            class="fa-solid fa-caret-down down-arrow" onclick="openLanguageMenu()"></i> </span> </i>
+            </div>
+
             <i class="fa-brands header-brands fa-facebook"></i>
             <i class="fa-brands header-brands fa-instagram"></i>
             <i class="fa-brands header-brands fa-linkedin"></i>
@@ -34,6 +39,13 @@
         </div>
 
         <div class="col-sm-6 col-xs-6">
+            <aside id="language-menu" class="language-menu">
+                <ul>
+                    <a onclick="changeLanguage('EN', '/')">
+                        <li>ENGLISH</li>
+                    </a>
+                </ul>
+            </aside>
             <div id="menuToggle" onclick="showMenu()">
                 <input type="checkbox" onclick="hideMenu()" />
                 
@@ -47,6 +59,8 @@
                   <a href="/#servicos"><li>Serviços</li></a>
                   <a href="/#missao"><li>Missão e Visão</li></a>
                   <a href="/contacto" style="text-decoration: none;color: #232323;"> <li>Contactos</li></a>
+                  
+                  <a href="/contact/en"> <li>ENGLISH</li></a>
                 </ul>
               </div>
         </div>
@@ -89,6 +103,7 @@
 
     <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="form">
+            <form method="post">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
                 <h2>Pronto para crescer o seu negócio?</h2> 
                 <span>Entre em contato conosco!</span>
@@ -96,33 +111,35 @@
 
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
                 <label>Primeiro Nome </label>
-                <input type="text" placeholder="Primeiro Nome">
+                <input type="text" required name="firstName" placeholder="Primeiro Nome">
                 
-                <label>Último Nome </label>
-                <input type="text" placeholder="Business Name">
+                <label>Nome do negócio </label>
+                <input type="text" required name="business" placeholder="Nome do negócio">
                 
                 <label>E-mail </label>
-                <input type="email" placeholder="E-mail">
+                <input type="email" required name="email" placeholder="E-mail">
                 
                 <label>Quais serviços oferece? </label>
-                <input type="text" placeholder="Quais serviços oferece?">                
+                <input type="text" required name="services" placeholder="Quais serviços oferece?">                
             </div>
 
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 second">
                 <label>Último Nome</label>
-                <input type="text" placeholder="Último Nome">
+                <input type="text" required name="lastName" placeholder="Último Nome">
                 
                 <label>Cargo </label>
-                <input type="text" placeholder="Cargo">
+                <input type="text" required name="job" placeholder="Cargo">
                 
                 <label>Contacto </label>
-                <input type="text" placeholder="Contacto">             
+                <input type="text" required name="contact" placeholder="Contacto">             
             </div>
             
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
                 <label>Como podetemos ajudar?</label>
-                <textarea rows="10" cols="22"></textarea>
+                <textarea rows="10" required name="contact" cols="22"></textarea>
+                <button type="button" class="btn btn-primary btn-lg btn-block submit" style="    background-color: #561970;">ENVIAR</button>
             </div>
+        </form>
         </div>
 
 

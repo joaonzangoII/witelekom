@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiTelecom</title>
+    <script src="/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/home.css">
+
+    <script src="https://kit.fontawesome.com/fa53d0c90a.js" crossorigin="anonymous"></script>
+
+    <style>
+        .menu-button {
+            width: 136px;
+        }
+
+        @media (max-width: 6687px) {
+            .subscription h3 {
+                font-size: .9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
+            <p class="call-now call-p">CALL NOW: +244956125365</p>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
+            <div class="language-section">
+                <i class="fa-brands header-brands"><img src="/images/icons/globe.png"><span class="language ">ENGLISH <i
+                            class="fa-solid fa-caret-down down-arrow" onclick="openLanguageMenu()"></i> </span> </i>
+            </div>
+
+            <i class="fa-brands header-brands fa-facebook"></i>
+            <i class="fa-brands header-brands fa-instagram"></i>
+            <i class="fa-brands header-brands fa-linkedin"></i>
+            <i class="fa-solid header-brands fa-circle-envelope"></i>
+
+        </div>
+
+        <div class="col-sm-6 col-xs-6">
+            <aside id="language-menu" class="language-menu">
+                <ul>
+                    <a onclick="changeLanguage('PT','/')">
+                        <li>PORTUGUESE</li>
+                    </a>
+                </ul>
+            </aside>
+            <div id="menuToggle" onclick="showMenu()">
+                <input type="checkbox" onclick="hideMenu()" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="/en">
+                        <li>Home</li>
+                    </a>
+                    <a href="/en#sobre">
+                        <li>About us</li>
+                    </a>
+                    <a href="/en#servicos">
+                        <li>Services</li>
+                    </a>
+                    <a href="/en#missao">
+                        <li>Mission and Vission</li>
+                    </a>
+                    <a href="/contact/en" style="text-decoration: none;color: #232323;">
+                        <li>Contact us</li>
+                    </a>
+                    
+                    <a href="/pt"> <li>PORTUGUÊS</li></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="default-container">
+
+        <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu">
+            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
+                <div class="col-md-3">
+                    <a href="/en">
+                        <img src="/images/WiLogoRedesigned.png">
+                    </a>
+                </div>
+
+                <div class="menu-label">
+                    <a href="#sobre" style="text-decoration: none;color: white;"> <button class="menu-button">ABOUT
+                            US</button></a>
+                </div>
+
+                <div class="menu-label">
+                    <a href="#servicos" style="text-decoration: none;color: white;"> <button
+                            class="menu-button">SERVICES</button> </a>
+                </div>
+
+                <div class="menu-label">
+                    <a href="/en#missao" style="text-decoration: none;color: white;"> <button class="menu-button">MISSION
+                            AND VISION</button></a>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 menu-contact">
+                <a href="/contact/en" style="text-decoration: none;color: white;"> <button
+                        class="menu-button">CONTACT</button></a>
+            </div>
+        </section>
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="slide item active ">
+                    <img class="carousel-img" src="/images/notebook.png">
+                </div>
+                <div class="slide item">
+                    <img class="carousel-img" src="/images/tech-bg.png">
+                </div>
+                <div class="slide item">
+                    <img class="carousel-img" src="/images/data-bg.png">
+                </div>
+                <div class="carousel-info">
+                    <h2 class="carousel-title">Discover a world <br>
+                        closer to you</h2>
+                    <p class="carousel-desc">With our services</p>
+                    <button class="carousel-desc-button" style="display: inline-block;">LEARN MORE</button>
+
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 carousel-icons">
+                        <a class="arrow-link left carousel-control" href="#carousel" role="button" data-slide="prev">
+                            <img class="arrow" src="/images/icons/Seta1.png">
+                        </a>
+
+                        <a class="arrow-link right carousel-control" href="#carousel" role="button" data-slide="next">
+                            <img class="arrow" src="/images/icons/Seta2.png">
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            $(".carousel").attr("data-interval", "2000");
+        </script>
+    </div>
+
+    <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 explore-container">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-section">
+            <h2 class="explore-section-h2">Explore the world</h2>
+            <p class="explore-section-p">With Wi Telecom services, you have the world at your feet.<br>
+                State-of-the-art connectivity and technology, ready to guarantee the <br>
+                best for you and your customers, partners and <br>
+                employees.
+            </p>
+            <button class="carousel-desc-button" style="display: inline-block;">LEARN MORE</button>
+
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-img-section">
+            <img class="explore-img" src="/images/cables.png">
+        </div>
+    </section>
+
+    <section id="missao" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 orientation-section">
+        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 orientation-aside-1">
+            <h2> Lines of <span class="clear"></span> Orientation</h2>
+            <p>
+                WI Telecom's values ​​translate into its <br>
+                vision and ambition for the value proposition <br>
+                of its portfolio of services and products.<br>
+                In this way, we intend to guarantee the offer<br>
+                fixed voice elementary, fixed data, but<br>
+                also integrate innovative offers,<br>
+                supported on next-generation smart grids<br>
+                generation.
+            </p>
+            <button class="carousel-desc-button" style="display: inline-block;">LEARN MORE</button>
+        </div>
+        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-values">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    Wide and Differentiated<br> Service Offer
+                </h3>
+
+                <p>
+                    Provide a wide and differentiated range of<br>
+                    services with the latest and most innovative<br>
+                    technology at affordable and competitive prices,<br>
+                    considering the low purchasing power of<br>
+                    ordinary angolan citizens
+
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    Emerging Cutting Edge<br> Technologies
+                </h3>
+
+                <p>
+                    Our services will be based on the most<br>
+                    advanced transmission technologies by<br>
+                    optical fiber, as well as in the emerging<br>
+                    Fixed Access LTE/5G technology,<br>
+                    providing greater speed, high<br>
+                    availability and focus patterns<br>
+                    in international trends
+
+                </p>
+            </div>
+
+
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    Value Proposition Focused<br> on Key Segments
+                </h3>
+
+                <p>
+                    Have a value proposition<br>
+                    added with its importance<br>
+                    duly recognized by customers<br>
+                    target, namely Business to<br>
+                    Customers (B2C), Small Office and Home<br>
+                    Office (SOHO),Business to Business (B2B)<br>
+                    and Business to Government (B2G)
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    Promoting Infrastru-<br>cture Sharing
+                </h3>
+
+                <p>
+                    Pointing to the development of<br>
+                    a network sharing approach<br>
+                    to access the infrastructures<br>
+                    existing in the country through the<br>
+                    establishment of partnerships with the<br>
+                    main holders of infrastructure<br>
+                    national network structures
+                </p>
+            </div>
+
+
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    National Coverage<br>Strategic
+                </h3>
+
+                <p>
+                    National network coverage to all<br>
+                    cities with significant population,<br>
+                    starting with the largest cities with<br>
+                    potential to increase penetration<br>
+                    on the market and then, increasingly,<br>
+                    provide nationwide coverage of<br>
+                    according to national requirements
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <h3>
+                    Accessible Services for<br> the Population
+                </h3>
+
+                <p>
+                    Offer services, accessible to the entire<br>
+                    population, which stand out for their<br>
+                    simplicity, quality and reliability,<br>
+                    as well as a connectivity and<br>
+                    reliable standards of inclusion and<br>
+                    Social development
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="col-md-12 sobre" style="
+    background-color: #561970;">
+        <div class="services-options" id="sobre">
+            <h2>What does Wi Telecom have to offer in<br> terms of services? </h2>
+        </div>
+    </section>
+
+    <section id="servicos" class="col-md-12 plans-section">
+        <div class="col-md-12">
+            <h2>Service Offering</h2>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+            <h3>Basic Fixed Service</h3>
+            <img src="/images/netflix-plan.png">
+
+            <h4>Broadband </h4>
+            <p>
+                Data transmission service <br>
+                Internet Service Access <br>
+                Mobile Internet services through<br>
+                MVNO positioning
+            </p>
+
+            <h4>Voice</h4>
+            <p>
+                Telephone service at a fixed location<br>
+                Voice service over the Internet <br>
+                Mobile voice service (VoLTE) through<br>
+                MVNO positioning
+            </p>
+
+            <h4>Tv</h4>
+            <p>
+                IPTV Service<br>
+                OTT service
+            </p>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+            <h3>Advanced Connectivity <h3>
+                    <img src="/images/pc-plan.png">
+
+                    <h4>Broadband </h4>
+                    <p>
+                        Virtual private network service
+                    </p>
+
+                    <h4>Voice</h4>
+                    <p>
+                        Unified Communication Systems
+                    </p>
+
+                    <h4>Data Center</h4>
+                    <p>
+                        Data Center Services (Cloud, IaaS, PaaS, and<br> SaaS)
+                    </p>
+
+                    <h4>Placing </h4>
+                    <p>
+                        Circuit reseller service
+                    </p>
+
+                    <h4>Satellite </h4>
+                    <p>
+                        Satellite service (D1) - two types of services:<br>
+                        gold with C-band and VPN for customers<br>
+                        corporate and silver with KU/KA band for<br>
+                        SME
+                    </p>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+            <h3>Advanced Services </h3>
+            <img src="/images/credit-plan.png">
+
+            <h4> Data Center</h4>
+            <p>
+                VAS (IoT, e-commerce, surveillance and <br>
+                emergency) <br>
+                Disaster recovery management<br>
+                Business network management
+            </p>
+
+            <h4>Placing</h4>
+            <p>
+                Network infrastructure rental (websites and<br>
+                data center)
+            </p>
+
+            <h4>Digital Payments </h4>
+            <p>Digital Payment Services </p>
+        </div>
+    </section>
+
+    <section class="col-md-12 work-section no-padding">
+        <div class="work-with-us">
+            <h2>
+                Why work with us?
+            </h2>
+
+            <p>
+                We have a differentiated and aggregating offer, based on a<br>
+                cutting edge technology that will allow you<br>
+                to provide high quality services.
+            </p>
+        </div>
+
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-line">
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-section no-padding">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription">
+                <h3> SUBSCRIBE TO THE NEWSLETTER WI TELECOMMUNICATIONS:</h3>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription no-padding">
+                <input type="text" class="subscription-box" placeholder="PUT YOUR EMAIL HERE">
+            </div>
+        </div>
+    </section>
+
+    <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 aside-logos">
+            <a href="/en">
+                <img src="/images/footer-logo.png" class="logo"></a>
+            <img src="/images/google-play-btn.png" class="google">
+        </div>
+
+        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 footer-section services">
+                <a href="#servicos" style="text-decoration: none;color: white;">
+                    <h3>Services</h3>
+                </a>
+
+                <a class="link">Products and Services of<br>
+                    Telecommunications</a>
+
+                <a class="link">Internet, Voice and Data</a>
+                <a class="link">Data Center</a>
+                <a class="link">Cloud Services</a>
+                <a class="link">International Leased Circuits</a>
+                <a class="link">Communications Services<br>Secure and Unified</a>
+                <a class="link">Payment Services<br> digital (WI MONEY)</a>
+                <a class="link">IOT</a>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-sm-3 col-xs-3 footer-section cc" style="margin: 0px;padding:0px;"><a
+                    href="/contact/en" style="text-decoration: none;color: white;">
+                    <h3>Contact us</h3>
+                </a></div>
+        </div>
+
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="follow">
+                <h4>Follow Wi on social media: </h4>
+
+                <i class="fa-brands footer-brands fa-facebook"></i>
+                <i class="fa-brands footer-brands fa-instagram"></i>
+                <i class="fa-brands footer-brands fa-linkedin"></i>
+                <i class="fa-brands footer-brands fa-mail"></i>
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
+                    <p>© 2022 Terms and conditions | Privacy Policy</p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
+                    <p>ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/slides.js"></script>
+
+</body>
+
+</html>

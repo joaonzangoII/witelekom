@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WiTelecom</title>
-    <script src="/js/jquery.min.js"></script> 
+    <script src="/js/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,42 +15,64 @@
 
     <script src="https://kit.fontawesome.com/fa53d0c90a.js" crossorigin="anonymous"></script>
 
- 
+
 </head>
 
 <body>
     <nav class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
-            <p class="call-now call-p">LIGUE:  +244956125365</p>
+            <p class="call-now call-p">LIGUE: +244956125365</p>
         </div>
 
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
+            <div class="language-section">
+                <i class="fa-brands header-brands"><img src="/images/icons/globe.png"><span class="language ">PORTUGUÊS <i class="fa-solid fa-caret-down down-arrow" onclick="openLanguageMenu()"></i> </span> </i>
+            </div>
+            
             <i class="fa-brands header-brands fa-facebook"></i>
             <i class="fa-brands header-brands fa-instagram"></i>
             <i class="fa-brands header-brands fa-linkedin"></i>
-            <i class="fa-brands header-brands fa-mail"></i>
+            <i class="fa-solid header-brands fa-circle-envelope"></i>
 
         </div>
 
         <div class="col-sm-6 col-xs-6">
+            <aside id="language-menu" class="language-menu">
+                <ul>
+                    <a onclick="changeLanguage('EN','/')"> <li>ENGLISH</li></a>
+                </ul>
+            </aside>
             <div id="menuToggle" onclick="showMenu()">
                 <input type="checkbox" onclick="hideMenu()" />
-                
+
                 <span></span>
                 <span></span>
                 <span></span>
-                
+
                 <ul id="menu">
-                  <a href="/"><li>Home</li></a>
-                  <a href="#sobre"><li>Sobre Nós</li></a>
-                  <a href="/#servicos"><li>Serviços</li></a>
-                  <a href="/#missao"><li>Missão e Visão</li></a>
-                  <a href="/contacto" style="text-decoration: none;color: #232323;"> <li>Contactos</li></a>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/#sobre">
+                        <li>Sobre Nós</li>
+                    </a>
+                    <a href="/#servicos">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="/#missao">
+                        <li>Missão e Visão</li>
+                    </a>
+                    <a href="/contacto" style="text-decoration: none;color: #232323;">
+                        <li>Contactos</li>
+                    </a>                    
+                   
+                    <a href="/en"> <li>ENGLISH</li></a>
+                    
                 </ul>
-              </div>
+            </div>
         </div>
     </nav>
-    
+
 
     <div class="default-container">
 
@@ -63,52 +85,63 @@
                 </div>
 
                 <div class="menu-label">
-                    <a href="#sobre" style="text-decoration: none;color: white;">   <button class="menu-button">SOBRE NÓS</button></a>
+                    <a href="#sobre" style="text-decoration: none;color: white;"> <button class="menu-button">SOBRE
+                            NÓS</button></a>
                 </div>
 
                 <div class="menu-label">
-                    <a href="#servicos" style="text-decoration: none;color: white;">       <button class="menu-button">SERVIÇOS</button> </a>
+                    <a href="#servicos" style="text-decoration: none;color: white;"> <button
+                            class="menu-button">SERVIÇOS</button> </a>
                 </div>
 
                 <div class="menu-label">
-                    <a href="/#missao" style="text-decoration: none;color: white;">         <button class="menu-button">MISSÃO E VISÃO</button></a>
+                    <a href="/#missao" style="text-decoration: none;color: white;"> <button class="menu-button">MISSÃO E
+                            VISÃO</button></a>
                 </div>
 
             </div>
 
             <div class="col-md-3 menu-contact">
-                <a href="/contacto" style="text-decoration: none;color: white;">  <button class="menu-button">CONTACTE-NOS</button></a>
+                <a href="/contacto" style="text-decoration: none;color: white;"> <button
+                        class="menu-button">CONTACTE-NOS</button></a>
             </div>
         </section>
 
-        <div class="carrousel">
-            <div class="mySlides fade">
-                <img class="carrousel-img" src="/images/notebook.png">
-            </div>
-            <div class="mySlides fade">
-                <img class="carrousel-img" src="/images/tech-bg.png">
-            </div>
-            <div class="mySlides fade">
-                <img class="carrousel-img" src="/images/data-bg.png">
-            </div>
-            <div class="carrousel-info">
-                <h2 class="carrousel-title">Descobre um mundo <br>
-                    mais perto de ti</h2>
-                <p class="carrousel-desc">Com os nossos serviços</p>
-                <button class="carrousel-desc-button" style="display: inline-block;">SABER MAIS</button>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="slide item active ">
+                    <img class="carousel-img" src="/images/notebook.png">
+                </div>
+                <div class="slide item">
+                    <img class="carousel-img" src="/images/tech-bg.png">
+                </div>
+                <div class="slide item">
+                    <img class="carousel-img" src="/images/data-bg.png">
+                </div>
+                <div class="carousel-info">
+                    <h2 class="carousel-title">Descobre um mundo <br>
+                        mais perto de ti</h2>
+                    <p class="carousel-desc">Com os nossos serviços</p>
+                    <button class="carousel-desc-button" style="display: inline-block;">SABER MAIS</button>
 
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 carrousel-icons">
-                    <a class="arrow-link" onclick="plusSlides(-1)">
-                        <img class="arrow" src="/images/icons/Seta1.png">
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 carousel-icons">
+                        <a class="arrow-link left carousel-control" href="#carousel" role="button" data-slide="prev">
+                            <img class="arrow" src="/images/icons/Seta1.png">
+                        </a>
+
+                        <a class="arrow-link right carousel-control" href="#carousel" role="button" data-slide="next">
+                            <img class="arrow" src="/images/icons/Seta2.png">
+                        </a>
+
                         
-                    </a>
-                    <a class="arrow-link" onclick="currentSlide(1)">
-                        <img class="arrow" src="/images/icons/Seta2.png">
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <script>
+            $(".carousel").attr("data-interval", "2000");
+        </script>
     </div>
 
     <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 explore-container">
@@ -119,7 +152,7 @@
                 melhor para si e para os seus clientes, parceiros e <br>
                 colaboradores.
             </p>
-            <button class="carrousel-desc-button" style="display: inline-block;">SABER MAIS</button>
+            <button class="carousel-desc-button" style="display: inline-block;">SABER MAIS</button>
 
         </div>
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-img-section">
@@ -140,11 +173,11 @@
                 suportadas em redes inteligentes de próxima<br>
                 geração.
             </p>
-            <button class="carrousel-desc-button" style="display: inline-block;">SABER MAIS</button>
+            <button class="carousel-desc-button" style="display: inline-block;">SABER MAIS</button>
         </div>
         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-values">
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                <h3> 
+                <h3>
                     Oferta de Serviços Ampla<br> e Diferenciada
                 </h3>
 
@@ -187,7 +220,7 @@
                     alvo, nomeadamente Business to<br>
                     Customers (B2C), Small Office e Home<br>
                     Office (SOHO),Business to Business (B2B)<br>
-                     e Business to Government (B2G)
+                    e Business to Government (B2G)
                 </p>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
@@ -211,7 +244,7 @@
                 <h3>
                     Cobertura Nacional<br>Estratégica
                 </h3>
-                
+
                 <p>
                     Cobertura da rede nacional a todas as<br>
                     cidades com população significativa,<br>
@@ -227,14 +260,14 @@
                 <h3>
                     Serviços Acessíveis para a<br>População
                 </h3>
-                
+
                 <p>
                     Oferecer serviços, acessíveis a toda a<br>
                     população, que se destaquem pela sua<br>
                     simplicidade, qualidade e confiança,<br>
                     bem como por uma conectividade e<br>
-                     padrões fiáveis de inclusão e<br>
-                     desenvolvimento social
+                    padrões fiáveis de inclusão e<br>
+                    desenvolvimento social
                 </p>
             </div>
 
@@ -262,7 +295,7 @@
                 Serviço de transmissão de dados <br>
                 Acesso ao Serviço de Internet <br>
                 Serviços de Internet móvel através do<br>
-                 posicionamento MVNO
+                posicionamento MVNO
             </p>
 
             <h4>Voz</h4>
@@ -284,49 +317,49 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
             <h3>
                 Conectividade Avançada <h3>
-            <img src="/images/pc-plan.png">
+                    <img src="/images/pc-plan.png">
 
-            <h4>Banda Larga            </h4>
-            <p>
-                Serviço de rede privada virtual
-            </p>
+                    <h4>Banda Larga </h4>
+                    <p>
+                        Serviço de rede privada virtual
+                    </p>
 
-            <h4>Voz</h4>
-            <p>
-                Sistemas de Comunicação Unificada
-            </p>
+                    <h4>Voz</h4>
+                    <p>
+                        Sistemas de Comunicação Unificada
+                    </p>
 
-            <h4>Centro de Dados            </h4>
-            <p>
-                Serviços do Centro de Dados (Cloud, IaaS, PaaS e<br> SaaS)
-            </p>
-            
-            <h4>Colocação </h4>
-            <p>
-                Serviço de revenda de circuitos 
-            </p>
-            
-            <h4>Satélite     </h4>
-            <p>
-                Serviço via satélite (D1) - dois tipos de serviços:<br>
-                ouro com banda C e VPN para clientes<br>
-                empresariais e prata com banda KU/KA para<br>
-                PME
-            </p>
+                    <h4>Centro de Dados </h4>
+                    <p>
+                        Serviços do Centro de Dados (Cloud, IaaS, PaaS e<br> SaaS)
+                    </p>
+
+                    <h4>Colocação </h4>
+                    <p>
+                        Serviço de revenda de circuitos
+                    </p>
+
+                    <h4>Satélite </h4>
+                    <p>
+                        Serviço via satélite (D1) - dois tipos de serviços:<br>
+                        ouro com banda C e VPN para clientes<br>
+                        empresariais e prata com banda KU/KA para<br>
+                        PME
+                    </p>
         </div>
 
 
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
             <h3>
-                Serviços Avançados           </h3>
+                Serviços Avançados </h3>
             <img src="/images/credit-plan.png">
 
-            <h4>Centro de Dados            </h4>
+            <h4>Centro de Dados </h4>
             <p>
                 VAS (IoT, comércio electrónico, vigilância e <br>
                 emergência) <br>
                 Gestão da recuperação em caso de catástrofe<br>
-                Gestão de redes empresariais                
+                Gestão de redes empresariais
             </p>
 
             <h4>Colocação</h4>
@@ -335,7 +368,7 @@
                 centro de dados)
             </p>
 
-            <h4>Pagamentos Digitais            </h4>
+            <h4>Pagamentos Digitais </h4>
             <p>Serviços de Pagamentos Digitais
             </p>
         </div>
@@ -348,27 +381,27 @@
             </h2>
 
             <p>
-                
+
                 Temos uma oferta diferenciada e agregadora, assente numa<br>
-                 rede alavancada em<br>
-                 tecnologia de última geração que lhe irá permitir a <br>
-                 disponibilização de serviços de alta<br>
+                rede alavancada em<br>
+                tecnologia de última geração que lhe irá permitir a <br>
+                disponibilização de serviços de alta<br>
                 qualidade.
 
             </p>
         </div>
 
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-line">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-line">
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-section no-padding">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription">
+                <h3>SUBSCREVA A NEWSLETTER WI TELECOMUNICAÇÕES:</h3>
             </div>
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-section no-padding">
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription">
-                    <h3>SUBSCREVA A NEWSLETTER WI TELECOMUNICAÇÕES:</h3>    
-                </div>
 
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription no-padding">
-                    <input type="text" class="subscription-box" placeholder="COLOQUE AQUI O SEU E-MAIL">
-                </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription no-padding">
+                <input type="text" class="subscription-box" placeholder="COLOQUE AQUI O SEU E-MAIL">
             </div>
+        </div>
     </section>
 
     <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -380,9 +413,11 @@
 
         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
             <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6 footer-section services">
-                <a href="#servicos" style="text-decoration: none;color: white;">      <h3>Serviços</h3> </a>
-                
-                <a class="link">Produtos e Serviços de<br> 
+                <a href="#servicos" style="text-decoration: none;color: white;">
+                    <h3>Serviços</h3>
+                </a>
+
+                <a class="link">Produtos e Serviços de<br>
                     Telecomunicações</a>
 
                 <a class="link">Internet, Voz e Dados</a>
@@ -394,25 +429,28 @@
                 <a class="link">IOT</a>
             </div>
 
-            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3 footer-section cc"><a href="/contacto" style="text-decoration: none;color: white;"> <h3> Contacte-nos</h3> </a></div>
+            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3 footer-section cc"><a href="/contacto"
+                    style="text-decoration: none;color: white;">
+                    <h3> Contacte-nos</h3>
+                </a></div>
         </div>
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="follow">
-            <h4>Siga a WI nas redes sociais: </h4>
-            
-            <i class="fa-brands footer-brands fa-facebook"></i>
-            <i class="fa-brands footer-brands fa-instagram"></i>
-            <i class="fa-brands footer-brands fa-linkedin"></i>
-            <i class="fa-brands footer-brands fa-mail"></i>
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
-                <p>© 2022  Termos e Condições | Política de Privacidade</p>
+                <h4>Siga a WI nas redes sociais: </h4>
+
+                <i class="fa-brands footer-brands fa-facebook"></i>
+                <i class="fa-brands footer-brands fa-instagram"></i>
+                <i class="fa-brands footer-brands fa-linkedin"></i>
+                <i class="fa-brands footer-brands fa-mail"></i>
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
+                    <p>© 2022 Termos e Condições | Política de Privacidade</p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
+                    <p>TODOS OS DIREITOS RESERVADOS</p>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
-                <p>TODOS OS DIREITOS RESERVADOS</p>
-            </div>
-        </div>
         </div>
     </footer>
 

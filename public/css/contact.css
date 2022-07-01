@@ -1,6 +1,10 @@
 
 
-@media (max-width: 1900px){
+@media (max-width: 5500px){
+    .submit{
+        width: 76%;
+        margin: 5% 0px 0px 0px;
+    }
     .contact-tittle{
         margin: 0 auto;
         display: table;
@@ -116,9 +120,38 @@
     }
 }
 
+@media (max-width: 745px) {
+    .form h2 {
+        font-size: 3em;
+    }
+    .tittle {
+        padding: 0px 0px 3% 0%;
+    }
+    .first {
+        padding: 0px 0px 0px 0%;
+    }
+    .second {
+        padding: 6% 0% 0px 0%;
+        width: 91%;
+    }
+    .text-section {
+        margin: 0px 0px 0% 0%;
+        padding: 0px 0px 0px 0px;
+    }
+    textarea {
+        width: 91%;
+    }
+    .submit {
+        width: 91%;
+    }
+}
+
 @media (max-width:575px){
+    .default-container {
+        padding: 14% 0px 0% 0px;
+    }
     .contact-tittle {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
@@ -138,4 +171,18 @@
         padding: 0px 3% 1% 0px;
         margin: 5% 0px 1% 8%;
     }
+}
+
+
+@media (max-width: 300px){
+    .default-container {
+        padding: 12% 0px 0% 0px;
+    }
+    form h2 {
+        font-size: 2em;
+    }
+}
+
+.default-container {
+    background-size: 100%;
 }
