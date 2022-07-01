@@ -711,6 +711,10 @@
 }
 
 @media (max-width: 520px) {
+    
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: 388px;
+        }
 
 
     .subscription h3 {
@@ -887,6 +891,9 @@
 }
 
 @media (max-width: 502px) {
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    height: 388px;
+    }
     .carousel-img {
         height: 277px;
     }
@@ -939,6 +946,9 @@
 }
 
 @media (max-width: 400px) {
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: 254px;
+        }
     .carousel-info {
         padding: 0px 0px 0px 6%;
         background-color: rgba(0, 0, 0, 0.5);
@@ -1109,6 +1119,12 @@
     .aside-values h3 {
         font-size: 9px;
     }
+}
+
+@media (max-width: 280px){
+    .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+        height: 233px;
+        }
 }
 
 

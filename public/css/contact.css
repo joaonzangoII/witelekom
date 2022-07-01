@@ -147,8 +147,11 @@
 }
 
 @media (max-width:575px){
-    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    height: 388px;
+    .subscription-box {
+        font-size: .5em;
+    }
+    .submit{
+        font-size: 1em;
     }
     .default-container {
         padding: 14% 0px 0% 0px;
@@ -165,9 +168,6 @@
 }
 
 @media (max-width: 400px) {
-    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-        height: 254px;
-        }
     .subscription-box{
         height: 29px;
         padding: 1% 0% 0% 1%;
@@ -187,12 +187,6 @@
     form h2 {
         font-size: 2em;
     }
-}
-
-@media (max-width: 280px){
-    .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-        height: 233px;
-        }
 }
 
 .default-container {
