@@ -26,6 +26,10 @@ app.get('/en', (req,res)=>{
     res.render('en/index')
 })
 
+app.get('/contact', (req,res)=>{
+    res.render('en/contact')
+})
+
 app.get('/contact/en', (req,res)=>{
     res.render('en/contact')
 })

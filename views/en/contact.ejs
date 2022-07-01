@@ -27,6 +27,19 @@
                 font-size: .8em;
             }
         }
+
+        @media (max-width: 310px) {
+            .subscription h3 {
+                padding: 0px 0% 1% 0px;
+                margin: 4% 0px 7% 7%;
+                font-size: 7px;
+            }
+
+            .subscription-box {
+                margin: 1% 0px 1% 0px;
+                font-size: .5em;
+            }
+        }
     </style>
 </head>
 
@@ -130,41 +143,42 @@
     <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="form">
             <form action="/contact" method="post">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
-                <h2>Ready to Grow your Business?</h2>
-                <span>Get in touch with us!</span>
-            </div>
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
+                    <h2>Ready to Grow your Business?</h2>
+                    <span>Get in touch with us!</span>
+                </div>
 
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
-                <label>First Name </label>
-                <input required type="text" name="firstName" placeholder="First Name">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
+                    <label>First Name </label>
+                    <input required type="text" name="firstName" placeholder="First Name">
 
-                <label>Business Name </label>
-                <input type="text" required name="business" placeholder="Business Name">
+                    <label>Business Name </label>
+                    <input type="text" required name="business" placeholder="Business Name">
 
-                <label>E-mail </label>
-                <input type="email" required name="email" placeholder="E-mail">
+                    <label>E-mail </label>
+                    <input type="email" required name="email" placeholder="E-mail">
 
-                <label>What services do you offer? </label>
-                <input type="text" name="services" placeholder="What services do you offer?">
-            </div>
+                    <label>What services do you offer? </label>
+                    <input type="text" name="services" placeholder="What services do you offer?">
+                </div>
 
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 second">
-                <label>Last Name</label>
-                <input type="text" required name="lastName" placeholder="Last Name">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 second">
+                    <label>Last Name</label>
+                    <input type="text" required name="lastName" placeholder="Last Name">
 
-                <label>Job Tittle </label>
-                <input type="text" required name="job" placeholder="Job Tittle">
+                    <label>Job Tittle </label>
+                    <input type="text" required name="job" placeholder="Job Tittle">
 
-                <label>Contact No. </label>
-                <input type="text" required name="contact" placeholder="Contact No.">
-            </div>
+                    <label>Contact No. </label>
+                    <input type="text" required name="contact" placeholder="Contact No.">
+                </div>
 
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
-                <label>How can we help you?</label>
-                <textarea rows="10" required name="contact" cols="22"></textarea>
-                <button type="button" class="btn btn-primary btn-lg btn-block submit" style="    background-color: #561970;">SUBMIT</button>
-            </div>
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
+                    <label>How can we help you?</label>
+                    <textarea rows="10" required name="contact" cols="22"></textarea>
+                    <button type="button" class="btn btn-primary btn-lg btn-block submit"
+                        style="    background-color: #561970;">SUBMIT</button>
+                </div>
             </form>
         </div>
 
@@ -191,8 +205,7 @@
 
     <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 aside-logos">
-            <a href="/en">
-                <img src="/images/footer-logo.png" class="logo"></a>
+            <img src="/images/footer-logo.png" class="logo">
             <img src="/images/google-play-btn.png" class="google">
         </div>
 
@@ -202,39 +215,39 @@
                     <h3>Services</h3>
                 </a>
 
-                <a class="link">Products and Services of<br>
+                <a class="link">Products and Services of
                     Telecommunications</a>
 
                 <a class="link">Internet, Voice and Data</a>
                 <a class="link">Data Center</a>
                 <a class="link">Cloud Services</a>
                 <a class="link">International Leased Circuits</a>
-                <a class="link">Communications Services<br>Secure and Unified</a>
-                <a class="link">Payment Services<br> digital (WI MONEY)</a>
+                <a class="link"> Communications Services<br>  Secure and Unified</a>
+                <a class="link">  Payment Services<br> Digital (WI MONEY)</a>
                 <a class="link">IOT</a>
             </div>
 
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-4 footer-section cc"><a href="/contacto"
-                style="text-decoration: none;color: white;">
-                <h3> Contacte-nos</h3>
+            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contacto"
+                    style="text-decoration: none;color: white;">
+                    <h3> Contact us</h3>
 
-                <h5>Telefone</h5>
-                <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
+                    <h5>Tel</h5>
+                    <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
 
-                <h4>Endereço</h4>
-                <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
-                    Park, Torre Luanda - 2º Andar
+                    <h4><Address></Address></h4>
+                    <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
+                        Park, Torre Luanda - 2º Andar
+                    </a>
+
+                    <h4>Email</h4>
+                    <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
                 </a>
-
-                <h4>Email</h4>
-                <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
-            </a>
-        </div>
+            </div>
         </div>
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="follow">
-                <h4>Follow Wi on social media: </h4>
+                <h4>Follow us: </h4>
 
                 <i class="fa-brands footer-brands fa-facebook"></i>
                 <i class="fa-brands footer-brands fa-instagram"></i>
@@ -242,7 +255,7 @@
                 <i class="fa-brands footer-brands fa-mail"></i>
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
-                    <p>© 2022 Terms and conditions | Privacy Policy</p>
+                    <p>© 2022 Term and Conditions |  Privacy Policy</p>
                 </div>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
                     <p>ALL RIGHTS RESERVED</p>

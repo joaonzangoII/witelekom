@@ -573,6 +573,11 @@
 }
 
 @media (max-width: 880px) {
+    
+    .aside-logos .logo {
+        max-width: 55%;
+        display: table;
+    }
     #menu li {
         padding: 10px 0;
         font-size: 13px;
@@ -938,6 +943,27 @@
 }
 
 @media (max-width: 430px) {
+    .form h2 {
+        font-size: 2em;
+    }
+    .cc {
+        margin: 0px 0px 0px 0%;
+        padding: 0px;
+    }
+    
+    .form-section {
+        padding: 5% 5% 0px 0%;
+    }
+    .aside-logos {
+        padding: 3% 0px 3% 25%;
+        margin: 0 auto;
+        display: table;
+        /* padding: 0px; */
+        align-items: center;
+    }
+    .cc h4, h5{
+        font-size: .6em;
+    }
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
         height: 309px;
     }
@@ -1010,7 +1036,7 @@
 
     .subscription-box {
         margin: 1% 0px 8% 0px;
-        width: 127px;
+        width: 113px;
     }
 
     .subscription h3 {
@@ -1119,7 +1145,11 @@
 @media (max-width: 340px) {
     .call-now {
         font-size: 9px;
-        padding: 16% 0px 0px 0%;
+        padding: 12% 0px 0px 0%;
+        margin: 0px;
+    }
+    .call{
+        padding: 0px;
         margin: 0px;
     }
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
@@ -1170,7 +1200,16 @@
 
     .call-now {
         font-size: 8px;
+        padding: 16% 0px 0px 0%;
     }
+    
+}
+
+@media (max-width: 340px){
+    .call-now {
+        font-size: 7px;
+    }
+        
 }
 
 @media (max-width: 200px) {
