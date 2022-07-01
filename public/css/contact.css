@@ -162,6 +162,14 @@
 }
 
 @media (max-width: 430px){
+    .subscription-box {
+        margin: 0% 0px 5% 0px;
+        height: 2.8em;
+    }
+    .subscription h3 {
+        margin: 6% 0px 2% 0px;
+        font-size: 7px;
+    }
     .form-section {
         padding: 5% 16% 0px 0%;
     }
