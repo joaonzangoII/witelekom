@@ -11,6 +11,15 @@
     position: relative;
 }
 @media (max-width: 6687px) {
+    .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right img{
+        border-radius: 20px;
+    }
+    .carousel-inner>.item{
+        border-radius: 20px;
+    }
+    .carousel-inner > .item.prev, .carousel-inner > .item.active.left {
+        border-radius: 20px;
+    }
 
     .aside-logos .logo {
         max-width: 36%;
