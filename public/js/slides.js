@@ -52,9 +52,9 @@ function openLanguageMenu() {
 
 function changeLanguage(current, location) {
     if(current == 'PT'){
-        window.location.replace(`${location}pt`);
+        window.location.replace(`${location}`);
     }
     else{
-        window.location.replace(`${location}en`);
+        window.location.replace(`${location}`);
     }
 }

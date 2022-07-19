@@ -69,8 +69,10 @@
 
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
             <div class="language-section">
-                <i class="fa-brands header-brands"><img src="/images/icons/globe.png"><span class="language ">ENGLISH <i
-                            class="fa-solid fa-caret-down down-arrow" onclick="openLanguageMenu()"></i> </span> </i>
+                <i class="fa-brands header-brands">
+                    
+                <div  class="circle" onclick="changeLanguage('PT','/')">PT</div> 
+                </i>
             </div>
 
             <i class="fa-brands header-brands fa-facebook"></i>
@@ -147,12 +149,12 @@
                             AND VISION</button></a>
                 </div>
 
+                <div class="menu-label">
+                    <a href="/contact/en" style="text-decoration: none;color: white;"> <button
+                            class="menu-button">CONTACT</button></a>
+                </div>
             </div>
 
-            <div class="col-md-3 menu-contact">
-                <a href="/contact/en" style="text-decoration: none;color: white;"> <button
-                        class="menu-button">CONTACT</button></a>
-            </div>
         </section>
 
         <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -334,7 +336,7 @@
             <h2>Service Offering</h2>
         </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+        <div id="internet" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
             <h3>Basic Fixed Service</h3>
             <img src="/images/netflix-plan.png">
 
@@ -362,7 +364,7 @@
         </div>
 
 
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+        <div id="connection" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
             <h3>Advanced Connectivity <h3>
                     <img src="/images/pc-plan.png">
 
@@ -396,7 +398,7 @@
         </div>
 
 
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
+        <div id="advanced" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 plan">
             <h3>Advanced Services </h3>
             <img src="/images/credit-plan.png">
 
@@ -453,20 +455,20 @@
 
         <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
             <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 footer-section services">
-                <a href="#servicos" style="text-decoration: none;color: white;">
+                <a href="/en#servicos" style="text-decoration: none;color: white;">
                     <h3>Services</h3>
                 </a>
 
-                <a class="link">Products and Services of
+                <a class="link" href="/en#internet">Products and Services of
                     Telecommunications</a>
 
-                <a class="link">Internet, Voice and Data</a>
-                <a class="link">Data Center</a>
-                <a class="link">Cloud Services</a>
-                <a class="link">International Leased Circuits</a>
-                <a class="link"> Communications Services<br>  Secure and Unified</a>
-                <a class="link">  Payment Services<br> Digital (WI MONEY)</a>
-                <a class="link">IOT</a>
+                <a class="link"  href="/en#internet">Internet, Voice and Data</a>
+                <a class="link" href="/en#connection">Data Center</a>
+                <a class="link" href="/en#connection">Cloud Services</a>
+                <a class="link" href="/en#advanced">International Leased Circuits</a>
+                <a class="link" href="/en#advanced"> Communications Services<br>  Secure and Unified</a>
+                <a class="link" href="/en#advanced">  Payment Services<br> Digital (WI MONEY)</a>
+                <a class="link" href="/en#advanced">IOT</a>
             </div>
 
             <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contact"

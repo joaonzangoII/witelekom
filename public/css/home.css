@@ -11,6 +11,18 @@
     position: relative;
 }
 @media (max-width: 6687px) {
+    .circle {
+        border-radius: 50%;    
+        width: 2.1em;
+        height: 2.1em;
+        padding: 26% 0px 0px 0px;
+        background: #fff;
+        color: #000;
+        text-align: center;
+        font-size: .5em;
+        font-weight: 600;
+    }
+
     .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right img{
         border-radius: 20px;
     }
