@@ -1103,6 +1103,15 @@
     }
 }
 
+@media (max-width: 415px) {
+    .aside-values h3 {
+        font-size: .8em;
+    }
+    .aside-values p {
+        font-size: .5em;
+    }
+}
+
 @media (max-width: 400px) {
     .default-container {
         padding: 21% 0px 8% 0px;
