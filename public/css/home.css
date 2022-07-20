@@ -10,6 +10,9 @@
 .carousel-control {
     position: relative;
 }
+.value{
+    display: inline-block;
+}
 @media (max-width: 6687px) {
     .circle {
         border-radius: 50%;    
@@ -231,10 +234,12 @@
 
     .aside-values h3 {
         font-size: 1.5em;
+        width: 97%;
     }
 
     .aside-values p {
         font-size: 1em;
+        width: 84%;
     }
 
     .orientation-aside-1 p {
@@ -328,6 +333,12 @@
     }
 
 }
+@media (max-width: 1715px) {
+    .aside-values p {
+        font-size: 1em;
+        width: 87%;
+    }
+}
 
 @media (max-width: 1415px) {
     .plan h3 {
@@ -345,6 +356,14 @@
 }
 
 
+@media (max-width: 1235px) {
+    .aside-values p {
+        font-size: .8em;
+        width: 87%;
+    }
+}
+
+
 @media (max-width: 1276px) {
     .plan h3 {
         font-size: 1.5em;
@@ -356,8 +375,13 @@
         font-size: .8em;
     }
 }
- 
 
+@media (max-width: 1194px) {
+    .aside-values h3 {
+        font-size: 1.3em;
+    }
+}
+ 
 @media (max-width: 1150px) {
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
         height: 634px;
@@ -614,7 +638,7 @@
     }
 
     .aside-values p {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     .orientation-aside-1 p {
@@ -625,7 +649,14 @@
         margin: 5% 4px 4px 4%;
     }
 }
-
+@media (max-width: 810px) {
+    .aside-values h3 {
+        font-size: .9em;
+    }
+    .aside-values p {
+        font-size: 7px;
+    }
+}
 @media (max-width: 800px) {
     .aside-values h3 {
         font-size: 1.2em;
@@ -637,6 +668,18 @@
 
     .explore-section-h2 {
         font-size: 3em;
+    }
+}
+
+@media (max-width: 730px) {
+    .aside-values {
+        padding: 0% 1% 7% 5%;
+    }
+    .aside-values h3 {
+        font-size: .8em;
+    }
+    .aside-values p {
+        font-size: 6px;
     }
 }
 
@@ -674,6 +717,7 @@
 
     .aside-values h3 {
         font-size: 1.2em;
+        width: 80%;
     }
 
     .orientation-aside-1 p {
@@ -740,6 +784,12 @@
 }
 
 @media (max-width: 680px) {
+    .aside-values h3 {
+        width: 92%;
+    }
+    .aside-values p {
+        width: 89%;
+    }
     .default-container {
         padding-bottom: 1%;
     }
@@ -759,7 +809,20 @@
     }
 }
 
+@media (max-width: 570px) {
+    .aside-values p {
+        width: 97%;
+        font-size: .5em;
+    }
+    .aside-values h3 {
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 520px) {
+    .aside-values h3 {
+        width: 100%;
+    }
     
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
         height: 388px;
@@ -924,11 +987,11 @@
     }
 
     .aside-values h3 {
-        font-size: 1em;
+        font-size: .9em;
     }
 
     .aside-values p {
-        font-size: .5em;
+        font-size: .4em;
     }
 
     .aside-values {
@@ -960,6 +1023,15 @@
 @media (max-width: 500px) {
     .carousel-info {
         height: 44%;
+    }
+}
+
+@media (max-width: 445px) {
+    .aside-values h3 {
+        font-size: .9em;
+    }
+    .aside-values p {
+        font-size: .5em;
     }
 }
 
@@ -1151,6 +1223,14 @@
     #menuToggle span {
         display: block;
         width: 25px;
+    }
+}
+@media (max-width: 380px) {
+    .aside-values h3 {
+        font-size: .7em;
+    }
+    .aside-values p {
+        font-size: 6px;
     }
 }
 
@@ -1718,6 +1798,7 @@ nav {
 .aside-values p {
     font-weight: 300;
     text-shadow: 0px 0px black;
+    text-align: justify;
 }
 
 .plan {
