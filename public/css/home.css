@@ -818,6 +818,12 @@
         font-size: 1em;
     }
 }
+@media (max-width: 539px) {
+.aside-values p {
+    width: 97%;
+    font-size: .7em;
+}
+}
 
 @media (max-width: 520px) {
     .aside-values h3 {
@@ -1031,11 +1037,17 @@
         font-size: .9em;
     }
     .aside-values p {
-        font-size: .5em;
+        font-size: .8em;
     }
 }
 
 @media (max-width: 430px) {
+    .aside-values h3 {
+        font-size: 1.2em;
+    }
+    .aside-values p {
+        font-size: .8em;
+    }
     .form h2 {
         font-size: 2em;
     }
@@ -1234,7 +1246,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
     .carousel-info {
         height: 53%;
     }
@@ -1260,8 +1272,11 @@
 }
 
 @media (max-width: 320px) {
-    .aside-values p{
-        font-size: .3em;
+    .aside-values p {
+        font-size: .4em;
+    }
+    .aside-values h3 {
+        font-size: .9em;
     }
 }
 
