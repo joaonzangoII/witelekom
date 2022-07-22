@@ -121,7 +121,7 @@
 
     <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="form">
-            <form method="post">
+            <form method="post" action="/contact/pt">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
                     <h2>Pronto para crescer o seu negócio?</h2>
                     <span>Entre em contato conosco!</span>
@@ -154,8 +154,8 @@
 
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
                     <label>Como podetemos ajudar?</label>
-                    <textarea rows="10" required name="contact" cols="22"></textarea>
-                    <button type="button" class="btn btn-primary btn-lg btn-block submit"
+                    <textarea rows="10" required name="content" cols="22"></textarea>
+                    <button  class="btn btn-primary btn-lg btn-block submit"
                         style="    background-color: #561970;">ENVIAR</button>
                 </div>
             </form>
@@ -163,8 +163,6 @@
 
 
     </section>
-
-
 
 
     <section class="col-md-12 work-section no-padding">
@@ -242,6 +240,19 @@
             </div>
         </div>
     </footer>
+
+
+    <% if(success){ %>
+        <script type="text/javascript">
+            window.alert('Email enviado com sucesso.')
+        </script> 
+    <%}%>
+
+    <% if(error){ %>
+        <script type="text/javascript">
+            window.alert('Ocorreu um erro no envio do email, tente novamente')
+        </script> 
+    <%}%>
 
     <script src="/js/slides.js"></script>
 

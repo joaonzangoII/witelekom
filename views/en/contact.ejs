@@ -145,7 +145,7 @@
 
     <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="form">
-            <form action="/contact" method="post">
+            <form action="/contact/en" method="post">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
                     <h2>Ready to Grow your Business?</h2>
                     <span>Get in touch with us!</span>
@@ -178,8 +178,8 @@
 
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
                     <label>How can we help you?</label>
-                    <textarea rows="10" required name="contact" cols="22"></textarea>
-                    <button type="button" class="btn btn-primary btn-lg btn-block submit"
+                    <textarea rows="10" required name="content" cols="22"></textarea>
+                    <button  class="btn btn-primary btn-lg btn-block submit"
                         style="    background-color: #561970;">SUBMIT</button>
                 </div>
             </form>
@@ -266,6 +266,18 @@
             </div>
         </div>
     </footer>
+
+    <% if(success){ %>
+        <script type="text/javascript">
+            alert('Email sent successfully.')
+        </script> 
+    <%}%>
+
+    <% if(error){ %>
+        <script type="text/javascript">
+            alert('There was an error sending the email, again')
+        </script> 
+    <%}%>
 
     <script src="/js/slides.js"></script>
 
