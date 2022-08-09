@@ -44,31 +44,37 @@
 </head>
 
 <body>
-    <nav class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call-p call">
-            <p class="call-now">CALL NOW: +244956125365</p>
-        </div>
-
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
-            <div class="language-section">
-                <i class="fa-brands header-brands">
-                    
-                <div  class="circle" onclick="changeLanguage('PT','/contacto')">PT</div> 
-                </i>
+    <section class="nav">        
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
+                <p class="call-now call-p">CALL NOW: +244 227 222 000</p>
             </div>
-
-            <i class="fa-brands header-brands fa-facebook"></i>
-            <i class="fa-brands header-brands fa-instagram"></i>
-            <i class="fa-brands header-brands fa-linkedin"></i>
-            <i class="fa-brands header-brands fa-mail"></i>
-
-        </div>
-
+    
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
+                
+                <div class="col-md-6 nav-icons" style="
+        padding: 0px 0px 0px 1%;
+    ">
+                    <i class="fa-brands header-brands icons fa-facebook"></i>
+                    <i class="fa-brands header-brands icons fa-instagram"></i>
+                    <i class="fa-brands header-brands icons fa-linkedin"></i>
+                    <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
+                </div>
+    
+                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
+                    <i class="fa-solid header-brands fa-globe fa-globe-pt">                        
+                    </i>
+                    <span style="float: right;padding: 3% 0px 0px 0px;font-weight: 700;" onclick="changeLanguage('PT','/')">PORTUGUESE</span> 
+                </div>
+    
+            </div>
+    
+         
         <div class="col-sm-6 col-xs-6">
             <aside id="language-menu" class="language-menu">
                 <ul>
-                    <a href="/pt">
-                        <li>Portuguese</li>
+                    <a onclick="changeLanguage('PT','/')">
+                        <li>PORTUGUESE</li>
                     </a>
                 </ul>
             </aside>
@@ -83,7 +89,7 @@
                     <a href="/en">
                         <li>Home</li>
                     </a>
-                    <a href="/en#explore">
+                    <a href="/#explore">
                         <li>About us</li>
                     </a>
                     <a href="/en#services">
@@ -93,51 +99,29 @@
                         <li>Mission and Vission</li>
                     </a>
                     <a href="/contact/en" style="text-decoration: none;color: #232323;">
-                        <li>Contact</li>
+                        <li>Contact us</li>
                     </a>
+
                     <a href="/pt">
-                        <li>Portuguese</li>
+                        <li>Português</li>
                     </a>
                 </ul>
             </div>
         </div>
-    </nav>
-
-
+        </div>
+        
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options" style="  background-color:  #561970;  padding: 0px 0px 0px 20%;">
+            <label> <a href="/#explore" style="text-decoration: none;color: white;">ABOUT US</a></label>
+            <label><a href="#en#services" style="text-decoration: none;color: white;">SERVICES</a></label>
+            <label><a href="/contact/en" style="text-decoration: none;color: white;">CONTACT</a></label>        
+        </div>
+        <img src="/images/WiLogoRedesigned.png" class="nav-logo">
+    </section>
+ 
     <div class="default-container">
 
-
-        <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu">
-            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
-                <div class="col-md-3">
-                    <a href="/en">
-                        <img src="/images/WiLogoRedesigned.png">
-                    </a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/#explore" style="text-decoration: none;color: white;"> <button class="menu-button">ABOUT
-                            US</button></a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/en#services" style="text-decoration: none;color: white;"> <button
-                            class="menu-button">SERVICES</button> </a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/en#mission" style="text-decoration: none;color: white;"> <button class="menu-button">MISSION
-                            AND VISION</button></a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/contacto" style="text-decoration: none;color: white;"> <button
-                            class="menu-button">CONTACT</button></a>
-                </div>
-
-            </div>
-
-        </section>
+        <div style="clear: both;margin: 0px 0px 3% 0px;" ></div>
+ 
 
         <h1 class="contact-tittle">CONTACT US</h1>
 

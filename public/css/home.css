@@ -13,7 +13,34 @@
 .value{
     display: inline-block;
 }
+
+.icons{
+    padding: .5em 1em 0px 0px;
+}
+
 @media (max-width: 6687px) {
+
+    .header-brands {
+        color: #561970;
+        font-size: 24px;
+        float: right;
+        padding: .5em 1em 0px 0px;
+        margin: 0px 0% 0px 0px;
+    }
+    .call-nav p{
+        color: #561970;
+        padding: 2% 0px 0px 38%;
+    }
+    label {
+        color: white;
+        padding: 1% 6% 11px 0px;
+    }
+    .call-nav{
+        background-color: white;color: #561970;
+    }
+    .nav-logo{
+        width: 6%;position: absolute;padding: 1% 1% 0px 1%;display: block;margin: 0px 0px 0px 8%;background-color: white;
+    }
     .circle {
         border-radius: 50%;    
         width: 2.1em;
@@ -169,6 +196,16 @@
 }
 
 @media (max-width: 5800px) {
+    .fa-globe-en{
+        float: left;
+    padding: 3% 0px 0% 81%;
+    font-size: 1.5em;
+    }
+    .fa-globe-pt{
+        float: left;
+        padding: 3% 0px 0% 36%;
+        font-size: 1.5em;
+    }
 
     .link {
         font-size: .8em;
@@ -333,14 +370,54 @@
     }
 
 }
+@media (max-width: 2630px) {
+    .fa-globe-pt {
+        padding: 3% 0px 0% 74%;
+    }
+}
+@media (max-width: 2230px) {
+    .fa-globe-pt {
+        padding: 3% 0px 0% 68%;
+    }
+}
+@media (max-width: 1915px) {
+    label {
+        color: white;
+        padding: 1% 6% 1px 0px;
+    }
+    .fa-globe-pt {
+        padding: 3% 0px 0% 62%;
+    }
+}
 @media (max-width: 1715px) {
+    .nav-logo {
+        width: 8%;}
+    .fa-globe-en{
+        float: left;
+        padding: 3% 0px 0% 81%;
+        font-size: 1.5em;
+    }
+    .fa-globe-pt{
+        float: left;
+        padding: 3% 0px 0% 68%;
+        font-size: 1.5em;
+    }
     .aside-values p {
         font-size: 1em;
         width: 87%;
     }
 }
+@media (max-width: 1615px) {
+    .fa-globe-pt {
+        float: left;
+        padding: 3% 0px 0% 54%;
+        font-size: 1.5em;
+    }
+}
 
 @media (max-width: 1415px) {
+    .nav-logo {
+        width: 8%;}
     .plan h3 {
         font-size: 1.8em;
     }
@@ -365,6 +442,11 @@
 
 
 @media (max-width: 1276px) {
+    .fa-globe-pt{
+        float: left;
+        padding: 3% 0px 0% 38%;
+        font-size: 1.5em;
+    }
     .plan h3 {
         font-size: 1.5em;
     }
@@ -436,6 +518,12 @@
 }
 
 @media (max-width: 992px) {
+    .call-nav{
+        background-color: #561970;
+    }
+    .call-nav p{
+        color: white;
+    }
     .footer-section h3 {
         font-size: 1.1em;
     }
@@ -518,7 +606,7 @@
         padding: 4% 0px 0px 0%;
     }
 
-    .header-social {
+    .header-social, .menu-options, .nav-logo {
         display: none;
     }
 
@@ -528,7 +616,7 @@
     }
 
     .default-container {
-        padding: 12% 0px 14% 0px;
+        padding: 3% 0px 14% 0px;
         background-size: auto;
     }
 
@@ -569,6 +657,8 @@
     }
 
     .header-social,
+    .menu-options,
+    .nav-logo,
     .menu {
         display: none;
     }
@@ -1247,6 +1337,9 @@
     }
 }
 @media (max-width: 380px) {
+    .call-nav p{
+        padding: 7% 0px 6% 26%;
+    }
     .aside-values h3 {
         font-size: 14px;
     }
@@ -1528,7 +1621,7 @@ body {
 
 #menuToggle {
     position: absolute;
-    top: 13px;
+    top: 6px;
     right: 48px;
 
     z-index: 1;
@@ -1554,9 +1647,9 @@ body {
 
 #menuToggle span {
     display: block;
-    width: 29px;
-    height: 3px;
-    margin-bottom: 5px;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 3px;
     position: relative;
 
     background: white;
@@ -1657,14 +1750,6 @@ a:hover {
     font-weight: 600;
     float: left;
     word-spacing: .2em;
-}
-
-.header-brands {
-    color: white;
-    font-size: 21px;
-    float: right;
-    padding: .5em .4em 0px 0px;
-    margin: 0px 1% 0px 0px;
 }
 
 nav {

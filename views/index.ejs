@@ -19,97 +19,79 @@
 </head>
 
 <body>
-    <nav class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
-            <p class="call-now call-p">LIGUE: +244 227 222 000</p>
-        </div>
-
-        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social" style="color: white;">
-            <div class="language-section">
-                <i class="fa-brands header-brands" >                        
-                <div  class="circle" onclick="changeLanguage('EN','/en')">EN</div> 
-                </i>
+    <section class="nav">        
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
+                <p class="call-now call-p">LIGUE: +244 227 222 000</p>
             </div>
-            
-            <i class="fa-brands header-brands fa-facebook"></i>
-            <i class="fa-brands header-brands fa-instagram"></i>
-            <i class="fa-brands header-brands fa-linkedin"></i>
-            <i class="fa-solid header-brands fa-circle-envelope"></i>
-
-        </div>
-
-        <div class="col-sm-6 col-xs-6">
-            <aside id="language-menu" class="language-menu">
-                <ul>
-                    <a onclick="changeLanguage('EN','/')"> <li>ENGLISH</li></a>
-                </ul>
-            </aside>
-            <div id="menuToggle" onclick="showMenu()">
-                <input type="checkbox" onclick="hideMenu()" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="menu">
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="/#explore">
-                        <li>Sobre Nós</li>
-                    </a>
-                    <a href="/#servicos">
-                        <li>Serviços</li>
-                    </a>
-                    <a href="/#missao">
-                        <li>Missão e Visão</li>
-                    </a>
-                    <a href="/contacto" style="text-decoration: none;color: #232323;">
-                        <li>Contactos</li>
-                    </a>                    
-                   
-                    <a href="/en"> <li>English</li></a>
-                    
-                </ul>
+    
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
+                
+                <div class="col-md-6 nav-icons" style="
+        padding: 0px 0px 0px 1%;
+    ">
+                    <i class="fa-brands header-brands icons fa-facebook"></i>
+                    <i class="fa-brands header-brands icons fa-instagram"></i>
+                    <i class="fa-brands header-brands icons fa-linkedin"></i>
+                    <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
+                </div>
+    
+                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
+                    <i class="fa-solid header-brands fa-globe fa-globe-en">                        
+                    </i>
+                    <span style="float: right;padding: 3% 0px 0px 0px;font-weight: 700;" onclick="changeLanguage('EN','/en')">ENGLISH</span> 
+                </div>
+    
+            </div>
+    
+            <div class="col-sm-6 col-xs-6">
+                <aside id="language-menu" class="language-menu">
+                    <ul>
+                        <a onclick="changeLanguage('EN','/')"> <li>ENGLISH</li></a>
+                    </ul>
+                </aside>
+                <div id="menuToggle" onclick="showMenu()">
+                    <input type="checkbox" onclick="hideMenu()" />
+    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+    
+                    <ul id="menu">
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="/#explore">
+                            <li>Sobre Nós</li>
+                        </a>
+                        <a href="/#servicos">
+                            <li>Serviços</li>
+                        </a>
+                        <a href="/#missao">
+                            <li>Missão e Visão</li>
+                        </a>
+                        <a href="/contacto" style="text-decoration: none;color: #232323;">
+                            <li>Contactos</li>
+                        </a>                    
+                       
+                        <a href="/en"> <li>English</li></a>
+                        
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-
+        
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options" style="  background-color:  #561970;  padding: 0px 0px 0px 20%;">
+            <label> <a href="/#explore" style="text-decoration: none;color: white;">SOBRE NÓS</a></label>
+            <label><a href="#servicos" style="text-decoration: none;color: white;">SERVIÇOS</a></label>
+            <label><a href="/contacto" style="text-decoration: none;color: white;">CONTACTE-NOS</a></label>        
+        </div>
+        <img src="/images/WiLogoRedesigned.png" class="nav-logo">
+    </section>
 
     <div class="default-container">
 
-        <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu">
-            <div class="col-md-9 col-lg-9 col-sm-9 col-xs-9">
-                <div class="col-md-3">
-                    <a href="/">
-                        <img src="/images/WiLogoRedesigned.png">
-                    </a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/#explore" style="text-decoration: none;color: white;"> <button class="menu-button">SOBRE
-                            NÓS</button></a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="#servicos" style="text-decoration: none;color: white;"> <button
-                            class="menu-button">SERVIÇOS</button> </a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/#missao" style="text-decoration: none;color: white;"> <button class="menu-button">MISSÃO E
-                            VISÃO</button></a>
-                </div>
-
-                <div class="menu-label">
-                    <a href="/contacto" style="text-decoration: none;color: white;"> <button
-                            class="menu-button">CONTACTE-NOS</button></a>
-                </div>
-
-            </div>
-            
-        </section>
-
+<div style="clear: both;margin: 0px 0px 3% 0px;" ></div>
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="slide item active ">
