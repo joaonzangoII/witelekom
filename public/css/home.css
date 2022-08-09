@@ -909,6 +909,10 @@
     }
 }
 @media (max-width: 539px) {
+    .call-nav p {
+        color: #561970;
+        padding: 4% 0px 0px 11%;
+    }
 .aside-values p {
     width: 97%;
     font-size: .7em;
@@ -1621,7 +1625,7 @@ body {
 
 #menuToggle {
     position: absolute;
-    top: 6px;
+    top: 9px;
     right: 48px;
 
     z-index: 1;
