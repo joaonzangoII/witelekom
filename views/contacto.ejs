@@ -5,59 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiTelecom</title>
+    <title>Contactos | WiTelecom</title>
     <script src="/js/jquery.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/contact.css">
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/fa53d0c90a.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
-    <section class="nav">        
+    <section class="nav">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
                 <p class="call-now call-p">LIGUE: +244 227 222 000</p>
             </div>
-    
+
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
-                
-                <div class="col-md-6 nav-icons" style="
-        padding: 0px 0px 0px 1%;
-    ">
+
+                <div class="col-md-6 nav-icons" style="padding: 0px 0px 0px 1%;">
                     <i class="fa-brands header-brands icons fa-facebook"></i>
                     <i class="fa-brands header-brands icons fa-instagram"></i>
                     <i class="fa-brands header-brands icons fa-linkedin"></i>
                     <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
                 </div>
-    
-                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
-                    <i class="fa-solid header-brands fa-globe fa-globe-en">                        
-                    </i>
-                    <span style="float: right;padding: 3% 0px 0px 0px;font-weight: 700;" onclick="changeLanguage('EN','/en')">ENGLISH</span> 
+
+                <div class="col-md-6 language-section">
+                    <i class="fa-solid header-brands fa-globe fa-globe-en"></i>
+                    <span onclick="changeLanguage('EN','/en')">ENGLISH</span>
                 </div>
-    
+
             </div>
-    
+
             <div class="col-sm-6 col-xs-6">
                 <aside id="language-menu" class="language-menu">
                     <ul>
-                        <a onclick="changeLanguage('EN','/')"> <li>ENGLISH</li></a>
+                        <a onclick="changeLanguage('EN','/')">
+                            <li>ENGLISH</li>
+                        </a>
                     </ul>
                 </aside>
                 <div id="menuToggle" onclick="showMenu()">
                     <input type="checkbox" onclick="hideMenu()" />
-    
                     <span></span>
                     <span></span>
                     <span></span>
-    
                     <ul id="menu">
                         <a href="#">
                             <li>Home</li>
@@ -71,31 +63,30 @@
                         <a href="/#missao">
                             <li>Missão e Visão</li>
                         </a>
-                        <a href="/contacto" style="text-decoration: none;color: #232323;">
+                        <a href="/contacto">
                             <li>Contactos</li>
-                        </a>                    
-                       
-                        <a href="/en"> <li>English</li></a>
-                        
+                        </a>
+
+                        <a href="/en">
+                            <li>English</li>
+                        </a>
+
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options" style="  background-color:  #561970;  padding: 0px 0px 0px 20%;">
-            <label> <a href="/#explore" style="text-decoration: none;color: white;">SOBRE NÓS</a></label>
-            <label><a href="#servicos" style="text-decoration: none;color: white;">SERVIÇOS</a></label>
-            <label><a href="/contacto" style="text-decoration: none;color: white;">CONTACTE-NOS</a></label>        
+
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options">
+            <label> <a href="/#explore">SOBRE NÓS</a></label>
+            <label><a href="/#servicos">SERVIÇOS</a></label>
+            <label><a href="/contacto">CONTACTE-NOS</a></label>
         </div>
-        <img src="/images/WiLogoRedesigned.png" class="nav-logo">
+        <a href="/"><img src="/images/WiLogoRedesigned.png" class="nav-logo"></a>
     </section>
 
     <div class="default-container">
-
-<div style="clear: both;margin: 0px 0px 3% 0px;" ></div>
-
+        <div class="top-separator"></div>
         <h1 class="contact-tittle">CONTACTOS</h1>
-
     </div>
 
     <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -134,7 +125,7 @@
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
                     <label>Como podetemos ajudar?</label>
                     <textarea rows="10" required name="content" cols="22"></textarea>
-                    <button  class="btn btn-primary btn-lg btn-block submit"
+                    <button class="btn btn-primary btn-lg btn-block submit"
                         style="    background-color: #561970;">ENVIAR</button>
                 </div>
             </form>
@@ -170,7 +161,7 @@
                 <a href="/#servicos" style="text-decoration: none;color: white;">
                     <h3>Serviços</h3>
                 </a>
-          
+
                 <a class="link" href="/#internet">Produtos e Serviços de<br>
                     Telecomunicações</a>
 
@@ -184,21 +175,21 @@
             </div>
 
             <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contacto"
-                style="text-decoration: none;color: white;">
-                <h3> Contacte-nos</h3>
+                    style="text-decoration: none;color: white;">
+                    <h3> Contacte-nos</h3>
 
-                <h5>Telefone</h5>
-                <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
+                    <h5>Telefone</h5>
+                    <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
 
-                <h4>Endereço</h4>
-                <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
-                    Park, Torre Luanda - 2º Andar
+                    <h4>Endereço</h4>
+                    <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
+                        Park, Torre Luanda - 2º Andar
+                    </a>
+
+                    <h4>Email</h4>
+                    <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
                 </a>
-
-                <h4>Email</h4>
-                <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
-            </a>
-        </div>
+            </div>
         </div>
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -224,16 +215,16 @@
     <% if(success){ %>
         <script type="text/javascript">
             window.alert('Email enviado com sucesso.')
-        </script> 
-    <%}%>
+        </script>
+        <%}%>
 
-    <% if(error){ %>
-        <script type="text/javascript">
-            window.alert('Ocorreu um erro no envio do email, tente novamente')
-        </script> 
-    <%}%>
+            <% if(error){ %>
+                <script type="text/javascript">
+                    window.alert('Ocorreu um erro no envio do email, tente novamente')
+                </script>
+                <%}%>
 
-    <script src="/js/slides.js"></script>
+                    <script src="/js/slides.js"></script>
 
 </body>
 
