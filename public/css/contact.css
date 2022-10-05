@@ -172,6 +172,10 @@
     .default-container {
         background-size: 100%;
     }
+
+    .contact-tittle {
+        padding: 1% 0px 23% 0px;
+    }
 }
 
 @media (max-width:765px) {
@@ -335,6 +339,7 @@
 
 .default-container {
     background-size: 100%;
+    background-position-Y: -100px;
 }
 
 /* The Modal (background) */

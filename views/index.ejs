@@ -12,74 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/fa53d0c90a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <section class="nav">
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
-                <p class="call-now call-p">LIGUE: +244 227 222 000</p>
-            </div>
-
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
-                <div class="col-md-6 nav-icons" style="padding: 0px 0px 0px 1%;">
-                    <i class="fa-brands header-brands icons fa-facebook"></i>
-                    <i class="fa-brands header-brands icons fa-instagram"></i>
-                    <i class="fa-brands header-brands icons fa-linkedin"></i>
-                    <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
-                </div>
-                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
-                    <i class="fa-solid header-brands fa-globe fa-globe-en"></i>
-                    <span onclick="changeLanguage('EN','/en')">ENGLISH</span>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-xs-6">
-                <aside id="language-menu" class="language-menu">
-                    <ul>
-                        <a onclick="changeLanguage('EN','/')">
-                            <li>ENGLISH</li>
-                        </a>
-                    </ul>
-                </aside>
-                <div id="menuToggle" onclick="showMenu()">
-                    <input type="checkbox" onclick="hideMenu()" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="/#explore">
-                            <li>Sobre Nós</li>
-                        </a>
-                        <a href="/#servicos">
-                            <li>Serviços</li>
-                        </a>
-                        <a href="/#missao">
-                            <li>Missão e Visão</li>
-                        </a>
-                        <a href="/contacto">
-                            <li>Contactos</li>
-                        </a>
-
-                        <a href="/en">
-                            <li>English</li>
-                        </a>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options">
-            <label> <a href="/#explore">SOBRE NÓS</a></label>
-            <label><a href="#servicos">SERVIÇOS</a></label>
-            <label><a href="/contacto">CONTACTE-NOS</a></label>
-        </div>
-        <a href="/"><img src="/images/WiLogoRedesigned.png" class="nav-logo"></a>
-    </section>
-
+    <%- include("partials/pt_navbar.ejs") %>        
     <div class="default-container">
         <div class="top-separator"></div>
         <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -118,7 +52,11 @@
             $(".carousel").attr("data-interval", "2000");
         </script>
     </div>
-
+    <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12  sobre" style="background-color: #561970;">
+        <div class="services-options">
+            <h2>O que a Wi Telecom tem a oferecer em<br> termos de serviços? </h2>
+        </div>
+    </section>
     <section id="explore" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 explore-container">
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-section">
             <h2 class="explore-section-h2">Explora o Mundo</h2>
@@ -134,7 +72,6 @@
             <img class="explore-img" src="/images/cables.png">
         </div>
     </section>
-
     <section id="missao" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 orientation-section">
         <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 orientation-aside-1">
             <h2> Linhas de <span class="clear"></span> Orientação</h2>
@@ -182,12 +119,10 @@
                 </p>
             </div>
 
-
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 value">
                 <h3>
                     Proposta de Valor Focada nos Segmentos Chaves
                 </h3>
-
                 <p>
                     Ter uma proposta de valor
                     acrescentado com a sua importância
@@ -248,13 +183,6 @@
 
         </div>
     </section>
-
-    <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12  sobre" style="background-color: #561970;">
-        <div class="services-options">
-            <h2>O que a Wi Telecom tem a oferecer em<br> termos de serviços? </h2>
-        </div>
-    </section>
-
     <section id="servicos" class="col-md-12 plans-section">
         <div class="col-md-12">
             <h2>Oferta de Serviços</h2>
@@ -347,7 +275,6 @@
             </p>
         </div>
     </section>
-
     <section class="col-md-12 work-section no-padding">
         <div class="work-with-us">
             <h2>
@@ -377,70 +304,6 @@
             </div>
         </div>
     </section>
-
-    <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 aside-logos">
-            <img src="/images/footer-logo.png" class="logo">
-            <img src="/images/google-play-btn.png" class="google">
-        </div>
-
-        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 footer-section services">
-                <a href="#servicos" style="text-decoration: none;color: white;">
-                    <h3>Serviços</h3>
-                </a>
-
-                <a class="link" href="/#internet">Produtos e Serviços de<br>
-                    Telecomunicações</a>
-
-                <a class="link" href="/#internet">Internet, Voz e Dados</a>
-                <a class="link" href="/#conectividade">Data Center</a>
-                <a class="link" href="/#conectividade">Serviços de Cloud</a>
-                <a class="link" href="/#avancado">Circuitos Alugados Internacionais</a>
-                <a class="link" href="/#avancado">Serviços de Comunicações<br>Seguras e Unificadas</a>
-                <a class="link" href="/#avancado">Serviços de pagamentos<br> digitais (WI MONEY)</a>
-                <a class="link" href="/#avancado">IOT</a>
-            </div>
-
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contacto"
-                    style="text-decoration: none;color: white;">
-                    <h3> Contacte-nos</h3>
-
-                    <h5>Telefone</h5>
-                    <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
-
-                    <h4>Endereço</h4>
-                    <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
-                        Park, Torre Luanda - 2º Andar
-                    </a>
-
-                    <h4>Email</h4>
-                    <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="follow">
-                <h4>Siga a WI nas redes sociais: </h4>
-
-                <i class="fa-brands footer-brands fa-facebook"></i>
-                <i class="fa-brands footer-brands fa-instagram"></i>
-                <i class="fa-brands footer-brands fa-linkedin"></i>
-                <i class="fa-brands footer-brands fa-mail"></i>
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
-                    <p>© 2022 Termos e Condições | Política de Privacidade</p>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
-                    <p>TODOS OS DIREITOS RESERVADOS</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/slides.js"></script>
-
+    <%- include("partials/pt_footer.ejs") %>
 </body>
-
 </html>

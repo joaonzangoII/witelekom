@@ -21,7 +21,7 @@ html {
 }
 
 .icons {
-    padding: .5em 1em 0px 0px;
+    padding: .5em 1em .5em 0px;
 }
 
 .top-separator {
@@ -41,17 +41,28 @@ html {
 .menu-options {
     background-color: #561970;
     padding: 0px 0px 0px 20%;
+    height: 39px;
+    align-items: cem;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
 }
 
-.menu-options label a {
+.menu-options li {
+    display: inline;
+    vertical-align: middle;
+    line-height: 39px;
+}
+
+.menu-options li a {
     text-decoration: none;
     color: white;
 }
 
 .language-section {
     float: right;
-    padding: 5px 10% 0px 0px;
     display: flex;
+    align-items: center;
 }
 
 .language-section i {
@@ -60,18 +71,15 @@ html {
 
 .language-section span {
     float: right;
-    padding: 3% 0px 0px 0px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 @media (max-width: 6687px) {
-
     .header-brands {
         color: #561970;
-        font-size: 24px;
+        font-size: 1.5em;
         float: right;
-        padding: .5em 1em 0px 0px;
-        margin: 0px 0% 0px 0px;
     }
 
     .call-nav p {
@@ -79,7 +87,7 @@ html {
         padding: 2% 0px 0px 38%;
     }
 
-    label {
+    .menu-options li {
         color: white;
         padding: 1% 6% 1% 0px;
     }
@@ -222,7 +230,7 @@ html {
     }
 
     .orientation-aside-1 p {
-        text-shadow: 0px 1px black;
+        /* text-shadow: 0px 1px black; */
     }
 
     .link {
@@ -265,16 +273,17 @@ html {
 }
 
 @media (max-width: 5800px) {
+    /* .carousel {
+        top: 60px !important;
+    } */
     .fa-globe-en {
         float: left;
-        padding: 3% 0px 0% 81%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 81%; */
     }
 
     .fa-globe-pt {
         float: left;
-        padding: 3% 0px 0% 36%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 36%; */
     }
 
     .link {
@@ -350,11 +359,11 @@ html {
     }
 
     .orientation-aside-1 p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .orientation-aside-1 h2 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .footer-brands {
@@ -426,7 +435,7 @@ html {
 
     .plan p {
         font-size: .7em;
-        text-shadow: 0px 0px black;
+        /* text-shadow: 0px 0px black; */
     }
 
     .plan h4 {
@@ -443,24 +452,27 @@ html {
 
 @media (max-width: 2630px) {
     .fa-globe-pt {
-        padding: 3% 0px 0% 74%;
+        /* padding: 3% 0px 0% 74%; */
     }
+    /* .carousel {
+        top: 25px;
+    } */
 }
 
 @media (max-width: 2230px) {
     .fa-globe-pt {
-        padding: 3% 0px 0% 68%;
+        /* padding: 3% 0px 0% 68%; */
     }
 }
 
 @media (max-width: 1915px) {
-    label {
+    .menu-options li {
         color: white;
         padding: 1% 6% 1% 0px;
     }
 
     .fa-globe-pt {
-        padding: 3% 0px 0% 62%;
+        /* padding: 3% 0px 0% 62%; */
     }
 }
 
@@ -471,14 +483,12 @@ html {
 
     .fa-globe-en {
         float: left;
-        padding: 3% 0px 0% 81%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 81%; */
     }
 
     .fa-globe-pt {
         float: left;
-        padding: 3% 0px 0% 68%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 68%; */
     }
 
     .aside-values p {
@@ -490,8 +500,7 @@ html {
 @media (max-width: 1615px) {
     .fa-globe-pt {
         float: left;
-        padding: 3% 0px 0% 54%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 54%; */
     }
 }
 
@@ -527,8 +536,7 @@ html {
 @media (max-width: 1276px) {
     .fa-globe-pt {
         float: left;
-        padding: 3% 0px 0% 38%;
-        font-size: 1.5em;
+        /* padding: 3% 0px 0% 38%; */
     }
 
     .plan h3 {
@@ -608,13 +616,13 @@ html {
 }
 
 @media (max-width: 992px) {
-    .call-nav {
+    /* .call-nav {
         background-color: #561970;
-    }
+    } */
 
-    .call-nav p {
+    /* .call-nav p {
         color: white;
-    }
+    } */
 
     .footer-section h3 {
         font-size: 1.1em;
@@ -686,6 +694,14 @@ html {
 }
 
 @media (max-width: 902px) {
+    .call-nav {
+        background-color: #561970;
+    }
+    
+    .call-nav p {
+        color: white;
+    }
+
     .sobre {
         display: flex;
     }
@@ -694,9 +710,17 @@ html {
         height: 492px;
     }
 
+    .call {
+        line-height: 30px;
+    }
+
     .call-now {
         font-size: 13px;
         padding: 4% 0px 0px 0%;
+    }
+
+    .call-nav p {
+        padding: 2% 0px 0px 20%;
     }
 
     .header-social,
@@ -772,7 +796,7 @@ html {
 
     .plan p {
         font-size: .9em;
-        text-shadow: 0px 0px black;
+        /* text-shadow: 0px 0px black; */
     }
 
     .plan h3 {
@@ -1198,7 +1222,7 @@ html {
     }
 
     .orientation-aside-1 p {
-        text-shadow: 0px 0px black;
+        /* text-shadow: 0px 0px black; */
         font-size: 1em;
     }
 
@@ -2033,7 +2057,7 @@ nav {
 .explore-section-p {
     padding: 4% 0px 0px 0px;
     font-weight: 300;
-    text-shadow: 0px 0px black;
+    /* text-shadow: 0px 0px black; */
 }
 
 .orientation-section {
@@ -2060,8 +2084,8 @@ nav {
 }
 
 .orientation-aside-1 p {
-    padding: 5% 6px 0px 0px;
-    word-spacing: .3em;
+    /* padding: 5% 6px 0px 0px; */
+    /* word-spacing: .3em; */
     font-weight: 300;
 }
 
@@ -2071,7 +2095,7 @@ nav {
 
 .aside-values p {
     font-weight: 300;
-    text-shadow: 0px 0px black;
+    /* text-shadow: 0px 0px black; */
     text-align: justify;
 }
 
@@ -2093,7 +2117,7 @@ nav {
 
 .plan h4 {
     font-weight: 500;
-    text-shadow: 0px 1px black;
+    /* text-shadow: 0px 1px black; */
 }
 
 .plan p {

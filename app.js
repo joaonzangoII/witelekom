@@ -1,25 +1,37 @@
+
 const express = require('express'),
-      app =  express(),
-      port = process.env.PORT || 3001,
-      bodyParser = require('body-parser'),
-      path = require('path'),
-      methodOverride = require('method-override'),
-      cors = require('cors');
+    app = express(),
+    port = process.env.PORT || 3001,
+    bodyParser = require('body-parser'),
+    path = require('path'),
+    methodOverride = require('method-override'),
+    cors = require('cors');
 const nodemailer = require('nodemailer');
 const defaultEmail = "witelekomwebsite@outlook.com";
+var i18n = require('./i18n');
 
 const transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com", // hostname
     secureConnection: false, // TLS requires secureConnection to be false
     port: 587, // port for secure SMTP
-  auth: {
-    user: 'witelekomwebsite@outlook.com',
-    pass: 'Witelekom123'
-  },
-  tls: {
-      ciphers:'SSLv3'
-  }
+    auth: {
+        user: 'witelekomwebsite@outlook.com',
+        pass: 'Witelekom123'
+    },
+    tls: {
+        ciphers: 'SSLv3'
+    }
 });
+
+// MIDDLEWARES
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
+app.set("view engine", "ejs");
+app.use(express.static(path.resolve(__dirname + '/views')));
+app.use(express.static(path.resolve(__dirname + '/public')));
+app.use('/views', express.static(path.resolve(__dirname, 'views/partials')));
+app.use(i18n);
+
 app.use(function (req, res, next) {
     res.locals.success = req.success;
     res.locals.error = req.error;
@@ -27,44 +39,45 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/', (req,res)=>{
+// ROUTES
+app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/en', (req,res)=>{
+app.get('/pt', (req, res) => {
+    res.setLocale('pt')
+    res.render('index')
+})
+
+app.get('/contacto', (req, res) => {
+    res.setLocale('pt')
+    res.render('contacto')
+})
+
+app.get('/en', (req, res) => {
     res.render('en/index')
 })
 
-app.get('/contact', (req,res)=>{
+app.get('/en/contacto', (req, res) => {
     res.render('en/contact')
 })
 
-app.get('/contact/en', (req,res)=>{
-    res.render('en/contact')
-})
+// app.use(bodyParser.urlencoded({extended: true}));
+// app.use(methodOverride("_method"));
+// app.set("view engine", "ejs");
+// app.use(express.static(path.resolve(__dirname+ '/views')));
+// app.use(express.static(path.resolve(__dirname+ '/public')));
+// app.use('/views', express.static(path.resolve(__dirname, 'views/partials')));
+// app.use(i18n);
+// app.use(function (req, res, next) {
+//     res.locals.success = req.success;
+//     res.locals.error = req.error;
+//     res.locals.msg = req.msg;
+//     next();
+// });
 
-app.get('/pt', (req,res)=>{
-    res.render('index')
-})
-
-app.get('/contacto', (req,res)=>{
-    res.render('contacto')
-})
-
-app.get('/contact/pt', (req,res)=>{
-    res.render('contacto')
-})
-
-
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(methodOverride("_method"));
-app.set("view engine", "ejs");
-app.use(express.static(path.resolve(__dirname+ '/views')));
-app.use(express.static(path.resolve(__dirname+ '/public')));
-app.use('/views', express.static(path.resolve(__dirname, 'views/partials')));
-
-app.post('/contact/:lang', (req,res)=>{
-    console.log('entrou no contacto')
+app.post('/contact/:lang', (req, res) => {
+    console.log('Entrou no contacto')
 
     const body = `
     <style>@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic&subset=latin,cyrillic);
@@ -392,31 +405,29 @@ app.post('/contact/:lang', (req,res)=>{
 
     <div class="spacer">&nbsp;</div>
 
- 
 </center>
     `;
 
     const subject = `Solicitação de contacto - ${req.body.firstName} ${req.body.lastName} `;
     const mailOptions = {
-      from: defaultEmail,
-      to: 'info@witelekom.ao',
-      subject: subject,
-      html: body
+        from: defaultEmail,
+        to: 'info@witelekom.ao',
+        subject: subject,
+        html: body
     };
-    
-    transporter.sendMail(mailOptions, function(error, info){
+
+    transporter.sendMail(mailOptions, function (error, info) {
         var path = req.params.lang === 'pt' ? "contacto" : "en/contact";
-      if (error) {
-        console.log('error at send email '+error) +' FOR '+ req.body.email;
-        res.render(path, {error: true});
-      } else {
-        res.render(path,{success : true});
-      }
+        if (error) {
+            console.log('error at send email ' + error) + ' FOR ' + req.body.email;
+            res.render(path, { error: true });
+        } else {
+            res.render(path, { success: true });
+        }
     });
 })
 
-
-app.get('*', (req,res)=>{
+app.get('*', (req, res) => {
     res.render('index')
 })
 
@@ -426,6 +437,6 @@ app.use((error, req, res, next) => {
     res.render('index');
 })
 
-app.listen(port,()=>{
-    console.log('WITELECOM SERVER ON '+port);
+app.listen(port, () => {
+    console.log('WITELECOM SERVER ON ' + port);
 })

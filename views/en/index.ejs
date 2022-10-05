@@ -7,14 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WiTelecom</title>
     <script src="/js/jquery.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="/css/home.css">
-
     <script src="https://kit.fontawesome.com/fa53d0c90a.js" crossorigin="anonymous"></script>
-
     <style>
         .menu-button {
             width: 136px;
@@ -62,84 +58,9 @@
 </head>
 
 <body>
-    <section class="nav">        
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
-                <p class="call-now call-p">CALL NOW: +244 227 222 000</p>
-            </div>
-    
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
-                
-                <div class="col-md-6 nav-icons" style="
-        padding: 0px 0px 0px 1%;
-    ">
-                    <i class="fa-brands header-brands icons fa-facebook"></i>
-                    <i class="fa-brands header-brands icons fa-instagram"></i>
-                    <i class="fa-brands header-brands icons fa-linkedin"></i>
-                    <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
-                </div>
-    
-                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
-                    <i class="fa-solid header-brands fa-globe fa-globe-pt">                        
-                    </i>
-                    <span style="float: right;padding: 3% 0px 0px 0px;font-weight: 700;" onclick="changeLanguage('PT','/')">PORTUGUESE</span> 
-                </div>
-    
-            </div>
-    
-         
-        <div class="col-sm-6 col-xs-6">
-            <aside id="language-menu" class="language-menu">
-                <ul>
-                    <a onclick="changeLanguage('PT','/')">
-                        <li>PORTUGUESE</li>
-                    </a>
-                </ul>
-            </aside>
-            <div id="menuToggle" onclick="showMenu()">
-                <input type="checkbox" onclick="hideMenu()" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="menu">
-                    <a href="/en">
-                        <li>Home</li>
-                    </a>
-                    <a href="/#explore">
-                        <li>About us</li>
-                    </a>
-                    <a href="/en#services">
-                        <li>Services</li>
-                    </a>
-                    <a href="/en#mission">
-                        <li>Mission and Vission</li>
-                    </a>
-                    <a href="/contact/en" style="text-decoration: none;color: #232323;">
-                        <li>Contact us</li>
-                    </a>
-
-                    <a href="/pt">
-                        <li>Português</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-        </div>
-        
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options" style="  background-color:  #561970;  padding: 0px 0px 0px 20%;">
-            <label> <a href="/#explore" style="text-decoration: none;color: white;">ABOUT US</a></label>
-            <label><a href="#en#services" style="text-decoration: none;color: white;">SERVICES</a></label>
-            <label><a href="/contact/en" style="text-decoration: none;color: white;">CONTACT</a></label>        
-        </div>
-        <img src="/images/WiLogoRedesigned.png" class="nav-logo">
-    </section>
- 
+    <%- include("../partials/en_navbar.ejs") %>
     <div class="default-container">
-
-        <div style="clear: both;margin: 0px 0px 3% 0px;" ></div>
-
+        <div class="top-separator"></div>
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="slide item active ">
@@ -176,7 +97,12 @@
             $(".carousel").attr("data-interval", "2000");
         </script>
     </div>
-
+    <section class="col-md-12 sobre" style="
+        background-color: #561970;">
+        <div class="services-options" id="sobre">
+            <h2>What does Wi Telecom have to offer in<br> terms of services? </h2>
+        </div>
+    </section>
     <section id="explore" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 explore-container">
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-section">
             <h2 class="explore-section-h2">Explore the world</h2>
@@ -186,19 +112,17 @@
                 employees.
             </p>
             <button class="carousel-desc-button" style="display: inline-block;">LEARN MORE</button>
-
         </div>
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 explore-img-section">
             <img class="explore-img" src="/images/cables.png">
         </div>
     </section>
-
     <section id="mission" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 orientation-section">
         <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 orientation-aside-1">
             <h2> Lines of <span class="clear"></span> Orientation</h2>
             <p>
-                WI Telecom's values ​​translate into its 
-                vision and ambition for the value proposition 
+                WI Telecom's values ​​translate into its
+                vision and ambition for the value proposition
                 of its portfolio of services and products.
                 In this way, we intend to guarantee the offer
                 fixed voice elementary, fixed data, but
@@ -304,13 +228,6 @@
                 </p>
             </div>
 
-        </div>
-    </section>
-
-    <section class="col-md-12 sobre" style="
-    background-color: #561970;">
-        <div class="services-options" id="sobre">
-            <h2>What does Wi Telecom have to offer in<br> terms of services? </h2>
         </div>
     </section>
 
@@ -429,70 +346,7 @@
             </div>
         </div>
     </section>
-
-    <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 aside-logos">
-            <img src="/images/footer-logo.png" class="logo">
-            <img src="/images/google-play-btn.png" class="google">
-        </div>
-
-        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 footer-section services">
-                <a href="/en#servicos" style="text-decoration: none;color: white;">
-                    <h3>Services</h3>
-                </a>
-
-                <a class="link" href="/en#internet">Products and Services of
-                    Telecommunications</a>
-
-                <a class="link"  href="/en#internet">Internet, Voice and Data</a>
-                <a class="link" href="/en#connection">Data Center</a>
-                <a class="link" href="/en#connection">Cloud Services</a>
-                <a class="link" href="/en#advanced">International Leased Circuits</a>
-                <a class="link" href="/en#advanced"> Communications Services<br>  Secure and Unified</a>
-                <a class="link" href="/en#advanced">  Payment Services<br> Digital (WI MONEY)</a>
-                <a class="link" href="/en#advanced">IOT</a>
-            </div>
-
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contact"
-                    style="text-decoration: none;color: white;">
-                    <h3> Contact us</h3>
-
-                    <h5>Tel</h5>
-                    <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
-
-                    <h4><Address></Address></h4>
-                    <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
-                        Park, Torre Luanda - 2º Andar
-                    </a>
-
-                    <h4>Email</h4>
-                    <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="follow">
-                <h4>Follow us: </h4>
-
-                <i class="fa-brands footer-brands fa-facebook"></i>
-                <i class="fa-brands footer-brands fa-instagram"></i>
-                <i class="fa-brands footer-brands fa-linkedin"></i>
-                <i class="fa-brands footer-brands fa-mail"></i>
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
-                    <p>© 2022 Term and Conditions |  Privacy Policy</p>
-                </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
-                    <p>ALL RIGHTS RESERVED</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/js/slides.js"></script>
-
+    <%- include("../partials/en_footer.ejs") %>
 </body>
 
 </html>

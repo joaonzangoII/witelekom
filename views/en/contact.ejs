@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiTelecom</title>
+    <title>About us | WiTelecom</title>
     <script src="/js/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -44,227 +44,84 @@
 </head>
 
 <body>
-    <section class="nav">        
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
-                <p class="call-now call-p">CALL NOW: +244 227 222 000</p>
-            </div>
-    
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
-                
-                <div class="col-md-6 nav-icons" style="
-        padding: 0px 0px 0px 1%;
-    ">
-                    <i class="fa-brands header-brands icons fa-facebook"></i>
-                    <i class="fa-brands header-brands icons fa-instagram"></i>
-                    <i class="fa-brands header-brands icons fa-linkedin"></i>
-                    <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
-                </div>
-    
-                <div class="col-md-6 language-section" style="float:right;padding: 5px 10% 0px 0px;">
-                    <i class="fa-solid header-brands fa-globe fa-globe-pt">                        
-                    </i>
-                    <span style="float: right;padding: 3% 0px 0px 0px;font-weight: 700;" onclick="changeLanguage('PT','/')">PORTUGUESE</span> 
-                </div>
-    
-            </div>
-    
-         
-        <div class="col-sm-6 col-xs-6">
-            <aside id="language-menu" class="language-menu">
-                <ul>
-                    <a onclick="changeLanguage('PT','/')">
-                        <li>PORTUGUESE</li>
-                    </a>
-                </ul>
-            </aside>
-            <div id="menuToggle" onclick="showMenu()">
-                <input type="checkbox" onclick="hideMenu()" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <ul id="menu">
-                    <a href="/en">
-                        <li>Home</li>
-                    </a>
-                    <a href="/#explore">
-                        <li>About us</li>
-                    </a>
-                    <a href="/en#services">
-                        <li>Services</li>
-                    </a>
-                    <a href="/en#mission">
-                        <li>Mission and Vission</li>
-                    </a>
-                    <a href="/contact/en" style="text-decoration: none;color: #232323;">
-                        <li>Contact us</li>
-                    </a>
-
-                    <a href="/pt">
-                        <li>Português</li>
-                    </a>
-                </ul>
-            </div>
+    <%- include("../partials/en_navbar.ejs") %>
+        <div class="default-container">
+            <div class="top-separator"></div>
+            <h1 class="contact-tittle">CONTACT US</h1>
         </div>
-        </div>
-        
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 menu-options" style="  background-color:  #561970;  padding: 0px 0px 0px 20%;">
-            <label> <a href="/#explore" style="text-decoration: none;color: white;">ABOUT US</a></label>
-            <label><a href="#en#services" style="text-decoration: none;color: white;">SERVICES</a></label>
-            <label><a href="/contact/en" style="text-decoration: none;color: white;">CONTACT</a></label>        
-        </div>
-        <img src="/images/WiLogoRedesigned.png" class="nav-logo">
-    </section>
- 
-    <div class="default-container">
+        <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="form">
+                <form action="/contact/en" method="post">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
+                        <h2>Ready to Grow your Business?</h2>
+                        <span>Get in touch with us!</span>
+                    </div>
 
-        <div style="clear: both;margin: 0px 0px 3% 0px;" ></div>
- 
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
+                        <label>First Name </label>
+                        <input required type="text" name="firstName" placeholder="First Name">
 
-        <h1 class="contact-tittle">CONTACT US</h1>
+                        <label>Business Name </label>
+                        <input type="text" required name="business" placeholder="Business Name">
 
-    </div>
+                        <label>E-mail </label>
+                        <input type="email" required name="email" placeholder="E-mail">
 
-    <section class="form-section col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="form">
-            <form action="/contact/en" method="post">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 tittle">
-                    <h2>Ready to Grow your Business?</h2>
-                    <span>Get in touch with us!</span>
-                </div>
+                        <label>What services do you offer? </label>
+                        <input type="text" name="services" placeholder="What services do you offer?">
+                    </div>
 
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
-                    <label>First Name </label>
-                    <input required type="text" name="firstName" placeholder="First Name">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 second">
+                        <label>Last Name</label>
+                        <input type="text" required name="lastName" placeholder="Last Name">
 
-                    <label>Business Name </label>
-                    <input type="text" required name="business" placeholder="Business Name">
+                        <label>Job Tittle </label>
+                        <input type="text" required name="job" placeholder="Job Tittle">
 
-                    <label>E-mail </label>
-                    <input type="email" required name="email" placeholder="E-mail">
+                        <label>Contact No. </label>
+                        <input type="text" required name="contact" placeholder="Contact No.">
+                    </div>
 
-                    <label>What services do you offer? </label>
-                    <input type="text" name="services" placeholder="What services do you offer?">
-                </div>
-
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 second">
-                    <label>Last Name</label>
-                    <input type="text" required name="lastName" placeholder="Last Name">
-
-                    <label>Job Tittle </label>
-                    <input type="text" required name="job" placeholder="Job Tittle">
-
-                    <label>Contact No. </label>
-                    <input type="text" required name="contact" placeholder="Contact No.">
-                </div>
-
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
-                    <label>How can we help you?</label>
-                    <textarea rows="10" required name="content" cols="22"></textarea>
-                    <button  class="btn btn-primary btn-lg btn-block submit"
-                        style="    background-color: #561970;">SUBMIT</button>
-                </div>
-            </form>
-        </div>
-
-
-    </section>
-
-
-
-
-    <section class="col-md-12 work-section no-padding">
-
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-line">
-        </div>
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-section no-padding">
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription">
-                <h3>SUBSCRIBE TO WI TELECOMMUNICATIONS NEWSLETTER:</h3>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-section">
+                        <label>How can we help you?</label>
+                        <textarea rows="10" required name="content" cols="22"></textarea>
+                        <button class="btn btn-primary btn-lg btn-block submit"
+                            style="    background-color: #561970;">SUBMIT</button>
+                    </div>
+                </form>
             </div>
 
-            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription no-padding">
-                <input type="text" class="subscription-box" placeholder="PUT YOUR EMAIL HERE">
+
+        </section>
+
+
+
+
+        <section class="col-md-12 work-section no-padding">
+
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-line">
             </div>
-        </div>
-    </section>
-
-    <footer class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 aside-logos">
-            <img src="/images/footer-logo.png" class="logo">
-            <img src="/images/google-play-btn.png" class="google">
-        </div>
-
-        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12 aside-options">
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-6 footer-section services">
-                <a href="/en#servicos" style="text-decoration: none;color: white;">
-                    <h3>Services</h3>
-                </a>
-
-                <a class="link" href="/en#internet">Products and Services of
-                    Telecommunications</a>
-
-                <a class="link"  href="/en#internet">Internet, Voice and Data</a>
-                <a class="link" href="/en#connection">Data Center</a>
-                <a class="link" href="/en#connection">Cloud Services</a>
-                <a class="link" href="/en#advanced">International Leased Circuits</a>
-                <a class="link" href="/en#advanced"> Communications Services<br>  Secure and Unified</a>
-                <a class="link" href="/en#advanced">  Payment Services<br> Digital (WI MONEY)</a>
-                <a class="link" href="/en#advanced">IOT</a>
-            </div>
-
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-3 footer-section cc"><a href="/contact"
-                    style="text-decoration: none;color: white;">
-                    <h3> Contact us</h3>
-
-                    <h5>Tel</h5>
-                    <a href="tel:+244227222000" class="link">+ 244 227 222 000</a>
-
-                    <h4><Address></Address></h4>
-                    <a id="location" class="link" href="#location">Avª. Talatona, Condomínio Belas Business<br>
-                        Park, Torre Luanda - 2º Andar
-                    </a>
-
-                    <h4>Email</h4>
-                    <a href="mailto:geral@witelekom.ao" class="link">geral@witelekom.ao</a>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-            <div class="follow">
-                <h4>Follow us: </h4>
-
-                <i class="fa-brands footer-brands fa-facebook"></i>
-                <i class="fa-brands footer-brands fa-instagram"></i>
-                <i class="fa-brands footer-brands fa-linkedin"></i>
-                <i class="fa-brands footer-brands fa-mail"></i>
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 footer-line"></div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-7 copyright-1">
-                    <p>© 2022 Term and Conditions |  Privacy Policy</p>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 subscription-section no-padding">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription">
+                    <h3>SUBSCRIBE TO WI TELECOMMUNICATIONS NEWSLETTER:</h3>
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-5 copyright-2">
-                    <p>ALL RIGHTS RESERVED</p>
+
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 subscription no-padding">
+                    <input type="text" class="subscription-box" placeholder="PUT YOUR EMAIL HERE">
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+        <%- include("../partials/en_footer.ejs") %>
+        <% if(success){ %>
+            <script type="text/javascript">
+                alert('Email sent successfully.')
+            </script>
+            <%}%>
 
-    <% if(success){ %>
-        <script type="text/javascript">
-            alert('Email sent successfully.')
-        </script> 
-    <%}%>
-
-    <% if(error){ %>
-        <script type="text/javascript">
-            alert('There was an error sending the email, again')
-        </script> 
-    <%}%>
-
-    <script src="/js/slides.js"></script>
-
+                <% if(error){ %>
+                    <script type="text/javascript">
+                        alert('There was an error sending the email, again')
+                    </script>
+                    <%}%>
 </body>
-
 </html>

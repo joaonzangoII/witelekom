@@ -1,0 +1,70 @@
+<section class="nav">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 call-nav">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 call">
+            <p class="call-now call-p">LIGUE: +244 227 222 000</p>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 header-social">
+            <div class="col-md-9 nav-icons">
+                <i class="fa-brands header-brands icons fa-facebook"></i>
+                <i class="fa-brands header-brands icons fa-instagram"></i>
+                <i class="fa-brands header-brands icons fa-linkedin"></i>
+                <i class="fa header-brands icons fa-envelope-square" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-3 language-section">
+                <i class="fa-solid header-brands fa-globe fa-globe-en icons"></i>
+                <span onclick="changeLanguage('EN','/en')">ENGLISH</span>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <!-- <aside id="language-menu" class="language-menu">
+                <ul>
+                    <a onclick="changeLanguage('EN','/')">
+                        <li>ENGLISH</li>
+                    </a>
+                </ul>
+            </aside> -->
+            <div id="menuToggle" onclick="showMenu()">
+                <input type="checkbox" onclick="hideMenu()" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="/">
+                        <li>
+                            <%= __('home')%>
+                        </li>
+                    </a>
+                    <a href="/#servicos">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="/#explore">
+                        <li>Sobre Nós</li>
+                    </a>
+                    <a href="/#missao">
+                        <li>Missão e Visão</li>
+                    </a>
+                    <a href="/contacto">
+                        <li>Contactos</li>
+                    </a>
+
+                    <a href="/en">
+                        <li>English</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- WIDE NAVBAR-->
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
+        <ul class="menu-options">
+            <!-- <li style="width: 20%;"></li> -->
+            <li><a href="/#servicos">SERVIÇOS</a></li>
+            <li><a href="/#explore">QUEM SOMOS</a></li>
+            <li><a href="/#">OS NOSSOS CLIENTES</a></li>
+            <li><a href="/#">NOTÍCIAS</a></li>
+            <li><a href="/contacto">CONTACTOS</a></li>
+        </ul>
+    </div>
+    <a href="/"><img src="/images/WiLogoRedesigned.png" class="nav-logo"></a>
+</section>
